@@ -1,0 +1,73 @@
+<%if current_user %>
+<div class="container">
+  <div class="jumbotron">
+
+<h1><%= @article.title %></h1>
+      <span class="label label-primary"> Last update <%= @article.updated_at.strftime("%b %d, %Y") %></span>
+      </div>
+
+
+    <div class="panel panel-default">
+      <div class="panel-body">
+<p>
+  <%= @article.text %>
+</p>
+
+      </div>
+      <div class="panel-footer">By:<strong> <%=current_user.name %></strong></div>
+    </div>
+</div>
+  <div class="container">
+    <%= link_to 'Edit Article', edit_user_article_path(@user),class: 'btn btn-success btn-xs'%>
+  </div>
+  <div class="container">
+<h2>Comments</h2> </div>
+<% @article.comments.each do |comment| %>
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-body">
+
+          <p>
+            <%= comment.body %>
+          </p></div>
+
+        <div class="panel-footer panel-primary"><strong>
+          <%= comment.commenter %></strong> </div>
+
+      </div>
+
+  <p>
+    <%= link_to 'Remove', [@article.user,comment.article, comment],
+                method: :delete,
+                data: { confirm: 'Are you sure?' }, class: 'label label-danger' %>
+  </p>
+    </div>
+<% end %>
+<% @user = User.find(params[:user_id])%>
+<%@article = @user.articles.find(params[:id])%>
+    <div class="container">
+<h3>Add a comment:</h3>
+<%= form_with(model: [ @user,@article, @article.comments.build ], local: true) do |form| %>
+        <div class="form-comment">
+        <div class="form-label-group">
+
+    <input type="text" name="comment[commenter]" class="form-control" placeholder="text" required autofocus>
+    <label for="inputName">Commenter</label>
+ </div></div>
+
+        <div class="form-label-group">
+  <p>
+    <%= form.text_area :body, class:'form-control'%>
+  </p></div>
+  <p>
+    <%= form.submit 'Submit', class: 'btns btn-success' %>
+  </p>
+<% end %>
+
+<% @user = User.find(params[:user_id])%>
+<%= link_to 'Back', user_articles_path,class: 'btn btn-primary btn-xs' %>
+      <%= link_to 'Home', root_url ,class: 'btn btn-info btn-xs'%>
+
+    </div>
+<%end %>
+

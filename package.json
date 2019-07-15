@@ -1,0 +1,7 @@
+{
+  "name": "registration_test",
+  "private": true,
+  "dependencies": {
+    "node.js": "0.0.0"
+  }
+}

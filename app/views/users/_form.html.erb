@@ -1,0 +1,47 @@
+<div class = "container">
+<%= form_with model: @user, local: true do |form| %>
+<% if @user.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(@user.errors.count, "error") %> prohibited
+      this User from being saved:
+    </h2>
+    <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+    <div class="form-label-group">
+<p>
+  <%= form.label :name %><br>
+  <%= form.text_field :name %>
+</p></div>
+
+    <div class="form-label-group">
+<p>
+  <%= form.label :email %><br>
+  <%= form.text_field :email %>
+</p></div>
+
+      <div class="form-label-group">
+<p>
+  <%= form.label :password %><br>
+  <%= form.password_field :password %>
+</p></div>
+
+    <div class="form-label-group">
+<p>
+  <%= form.label :password_confirmation %><br>
+  <%= form.password_field :password_confirmation %>
+</p></div>
+
+<p>
+  <%= form.submit 'Submit', class: "btns btn-success text-uppercase" %>
+</p>
+    <p>
+<h4><%= link_to 'Home', root_url,class: 'btn btn-info btn-xs' %></h4>
+    </p>
+<% end %>
+</div>

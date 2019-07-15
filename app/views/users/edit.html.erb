@@ -1,0 +1,17 @@
+<%if current_user %>
+  <div class="container">
+    <div class="page-header">
+<h1>Edit Profile</h1>
+    </div>
+  </div>
+  <div class="container">
+<% if current_user %>
+      <span class="label label-primary"> Logged in as <%= current_user.email %></span>
+      <%= link_to 'Log Out', logout_path, class: 'btn btn-danger btn-xs' %></div>
+<% else %>
+<% end %>
+<br>
+<%= render 'form' %>
+
+
+<%end %>

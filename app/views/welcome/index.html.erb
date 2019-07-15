@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="page-header">
+    <h1>My Blog</h1>
+    <h4><span class="label label-primary">Create articles, share stories! </span></h4>
+  </div>
+</div>
+<div class="container ">
+<% if current_user %>
+
+
+    <span class="label label-primary"> Logged in as <%= current_user.email %></span>
+    <%= link_to 'Log Out', logout_path, class: 'btn btn-danger btn-xs' %>
+  <%user = User.find_by_email(current_user.email) %>
+
+    <%String a=current_user.email %>
+    <% if a == "admin@gmail.com" %>
+      <%= link_to 'Admin Panel', users_path, class: 'btn btn-danger btn-xs' %>
+    <%end %>
+    <%= link_to 'My Articles', user_articles_path(current_user), class: 'btn btn-primary btn-xs' %>
+    <%= link_to 'Profile',user,class: 'btn btn-info btn-xs'%>
+
+    <p>
+    <h4>Welcome, <%=current_user.name%>. Feel free to create new articles and add comments!</h4>
+    </p>
+<br>
+    <p>
+    <%= link_to new_user_article_path(current_user), class: 'btnl btn-primary text-uppercase' do %>
+        <i class="glyphicon glyphicon-plus"></i> Create Article
+        <%end %>
+    </p>
+
+<% else %>
+    <%= render 'sessions/login2' %>
+    </div>
+  <% end %>
+
+

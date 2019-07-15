@@ -1,0 +1,33 @@
+
+<div class="row">
+    <p id=”alert”><%= alert %></p>
+
+
+      <div class="col-sm-8 col-md-7 col-lg-5 mx-auto">
+      <div class="card card-signin my-5">
+
+        <div class="card-body">
+
+            <%= form_tag sessions_path, local: true do |form| %>
+            <div class="form-signin">
+            <div class="form-label-group">
+              <%= text_field_tag :email %>
+              <%= label_tag :email %>
+            </div>
+
+            <div class="form-label-group">
+              <%= password_field_tag :password %>
+              <%= label_tag :password %>
+            </div>
+
+              <div class=”actions”>
+                <%= submit_tag 'Log in', class: 'btn btn-primary btn-block text-uppercase' %></div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%end %>
