@@ -3,9 +3,9 @@ source 'https://rubygems.org'
 gem "bcrypt", "~> 3.1.7"
 gem "font-awesome-rails"
 gem 'figaro'
+
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.2.0'
-gem 'pg', '~> 0.20'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -40,11 +40,13 @@ group :development, :test do
   gem 'sqlite3'
   gem 'web-console', '>= 3.3.0'
   gem 'spring'
+  gem 'listen', '>= 3.0.5', '< 3.2'
 end
 
 group :production do
 
   gem 'rails_12factor', '0.0.2'
+  gem 'pg', '~> 0.20'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
