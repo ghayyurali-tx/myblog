@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8d926bc-ab1d-45e8-8f97-75f62639b161" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-    </list>
+    <list default="true" id="b8d926bc-ab1d-45e8-8f97-75f62639b161" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/log/" />
@@ -20,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/registration_test@Production__registration_test.rcov" NAME="Production: registration_test Coverage Results" MODIFIED="1563192892616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="registration_test" />
+    <SUITE FILE_PATH="coverage/registration_test@Production__registration_test.rcov" NAME="Production: registration_test Coverage Results" MODIFIED="1563198434685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="registration_test" />
     <SUITE FILE_PATH="coverage/registration_test@Development__registration_test.rcov" NAME="Development: registration_test Coverage Results" MODIFIED="1563193095034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="registration_test" />
   </component>
   <component name="FileEditorManager">
@@ -290,7 +286,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Rails.Development: registration_test">
+  <component name="RunManager" selected="Rails.Production: registration_test">
     <configuration name="Development: registration_test" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="registration_test" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
@@ -410,16 +406,15 @@
       <workItem from="1562918409240" duration="6854000" />
       <workItem from="1562928925844" duration="8167000" />
       <workItem from="1562942650345" duration="3667000" />
-      <workItem from="1563176424506" duration="9169000" />
+      <workItem from="1563176424506" duration="9482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195465000" />
+    <option name="totallyTimeSpent" value="195778000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20239043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
