@@ -48,10 +48,9 @@
     <div class="container">
 <h3>Add a comment:</h3>
 <%= form_with(model: [ @user,@article, @article.comments.build ], local: true) do |form| %>
-        <div class="form-comment">
+        <div class="form-signin">
         <div class="form-label-group">
-
-    <input type="text" name="comment[commenter]" class="form-control" placeholder="text" required autofocus>
+    <%= form.text_field :commenter %>
     <label for="inputName">Commenter</label>
  </div></div>
 
@@ -60,7 +59,7 @@
     <%= form.text_area :body, class:'form-control'%>
   </p></div>
   <p>
-    <%= form.submit 'Submit', class: 'btns btn-success' %>
+    <%= form.submit 'Submit', class: 'btn btn-success btn-xs' %>
   </p>
 <% end %>
 
