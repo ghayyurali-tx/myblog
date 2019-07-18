@@ -1,12 +1,9 @@
-<div class="container">
-  <div class="page-header">
-    <h1>My Blog</h1>
-    <h4><span class="label label-primary">Create articles, share stories! </span></h4>
-  </div>
-</div>
 <div class="container ">
 <% if current_user %>
-
+          <div class="page-header">
+          <h1>My Blog</h1>
+          <!--<img class="navbar-logo" src="img/logo.png" alt="Vector Logo">-->
+        </div>
 
     <span class="label label-primary"> Logged in as <%= current_user.email %></span>
     <%= link_to 'Log Out', logout_path, class: 'btn btn-danger btn-xs' %>
@@ -24,13 +21,13 @@
     </p>
 <br>
     <p>
-    <%= link_to new_user_article_path(current_user), class: 'btnl btn-primary text-uppercase' do %>
+    <%= link_to new_user_article_path(current_user), class: 'btn btn-primary text-uppercase' do %>
         <i class="glyphicon glyphicon-plus"></i> Create Article
         <%end %>
     </p>
 
 <% else %>
-    <%= render 'sessions/login2' %>
+    <%= render 'sessions/newlogin' %>
     </div>
   <% end %>
 

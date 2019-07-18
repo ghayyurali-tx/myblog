@@ -3,15 +3,18 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="icon" type="image/png" href="/assets/favicon.png">
-    <title>MyBlog</title>
+
+    <title>My Blog</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag    'sessions', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
     <%= yield %>
+
   </body>
+
 </html>

@@ -1,11 +1,16 @@
 class UsersController < ApplicationController
-
+   layout "for_login", except: [:index, :confirm_email, :destroy, :show]
   def index
+
     @user = User.all
+
   end
 
   def new
+
     @user = User.new
+
+
   end
 
   def edit
@@ -13,6 +18,7 @@ class UsersController < ApplicationController
   end
 
   def create
+
     @user = User.new(user_params)
 
     if @user.save
@@ -42,7 +48,9 @@ class UsersController < ApplicationController
   end
 
   def destroy
+
     @user = User.find(params[:id])
+
     @user.destroy
 
     redirect_to users_path
@@ -70,4 +78,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end
+
+
 end
