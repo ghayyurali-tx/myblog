@@ -2,12 +2,20 @@ class User < ApplicationRecord
   #before_create :confirmation_token
   has_secure_password
   has_many :articles, dependent: :destroy
+  has_many :comments, dependent: :destroy
+
+  enum role: [:user, :vip, :admin]
+  after_initialize :set_default_role, :if => :new_record?
+
+  def set_default_role
+    self.role ||= :user
+  end
 
   validates :name, presence: true, format: { with: /\A[a-zA-Z\s]+\z/i, message: "can only be letters." }
   validates :email, presence: true, format: { with: URI::MailTo::EMAIL_REGEXP }
 
-  validates :password, confirmation: { case_sensitive: true } ,
-            length: { minimum: 3 }
+  #validates :password, confirmation: { case_sensitive: true } ,
+            #length: { minimum: 3 }
   validates_uniqueness_of :email , except: [:edit]
 
   def email_activate

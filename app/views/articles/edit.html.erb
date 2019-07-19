@@ -5,6 +5,7 @@
     </div></div>
   <div class="container">
     <span class="label label-primary"> Logged in as <%= current_user.email %></span>
+    <%= link_to 'Articles', user_articles_path(current_user), class: 'btn btn-primary btn-xs' %>
     <%= link_to 'Log Out', logout_path, class: 'btn btn-danger btn-xs' %>
   </div><br>
 <div class="container">
@@ -14,15 +15,11 @@
 
       <% if @article.errors.any? %>
         <div id="error_explanation">
-          <h2>
-            <%= pluralize(@article.errors.count, "error") %> prohibited
-            this article from being saved:
-          </h2>
-          <ul>
+
             <% @article.errors.full_messages.each do |msg| %>
               <li><%= msg %></li>
             <% end %>
-          </ul>
+          
         </div>
       <% end %>
 
@@ -40,11 +37,11 @@
 
       <p>
         <%= form.submit 'Submit', class: "btn btn-success btn-xs" %>
+
       </p>
     </div>
 <% end %>
 
-  <%= link_to 'My Articles', user_articles_path, class: 'btn btn-primary btn-xs' %>
-  <%= link_to 'Home', root_url,class: 'btn btn-info btn-xs' %>
+
   </div>
 <%end %>

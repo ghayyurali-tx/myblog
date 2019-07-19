@@ -8,9 +8,11 @@
   <meta content="Coderthemes" name="author" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <%= stylesheet_link_tag "login.css" , media: 'all', 'data-turbolinks-track': 'reload'%>
+  <%= stylesheet_link_tag "bootstrap.css", media: 'all', 'data-turbolinks-track': 'reload' %>
 
-  <%= stylesheet_link_tag "login.css" %>
-  <%= stylesheet_link_tag "bootstrap.css" %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
 
 </head>
 
@@ -18,5 +20,6 @@
 <body>
 <%= yield %>
 
+<%= javascript_include_tag 'bootstrap.min.js', 'data-turbolinks-track': 'reload'  %>
 </body>
 </html>

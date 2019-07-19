@@ -14,11 +14,14 @@
 </p>
 
       </div>
-      <div class="panel-footer">By:<strong> <%=current_user.name %></strong></div>
+      <div class="panel-footer">By:<strong> <%=@article.user.name %></strong></div>
     </div>
 </div>
   <div class="container">
-    <%= link_to 'Edit Article', edit_user_article_path(@user),class: 'btn btn-success btn-xs'%>
+    <% @user = User.find(params[:user_id])%>
+    <% if @article.user == @user || current_user.role == "admin" %>
+    <%= link_to 'Edit Article', edit_user_article_path(@article),class: 'btn btn-success btn-xs'%>
+      <%end %>
   </div>
   <div class="container">
 <h2>Comments</h2> </div>
@@ -37,14 +40,16 @@
       </div>
 
   <p>
+    <% if comment.user == @user || current_user.role == "admin"  %>
     <%= link_to 'Remove', [@article.user,comment.article, comment],
                 method: :delete,
                 data: { confirm: 'Are you sure?' }, class: 'label label-danger' %>
+<%end %>
   </p>
     </div>
 <% end %>
 <% @user = User.find(params[:user_id])%>
-<%@article = @user.articles.find(params[:id])%>
+
     <div class="container">
 <h3>Add a comment:</h3>
 <%= form_with(model: [ @user,@article, @article.comments.build ], local: true) do |form| %>
@@ -61,9 +66,7 @@
         </div>
 <% end %>
 
-<% @user = User.find(params[:user_id])%>
 <%= link_to 'Back', user_articles_path,class: 'btn btn-primary btn-xs' %>
-      <%= link_to 'Home', root_url ,class: 'btn btn-info btn-xs'%>
 
     </div>
 <%end %>
