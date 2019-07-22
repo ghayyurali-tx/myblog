@@ -65,7 +65,7 @@ class UsersController < ApplicationController
       #flash[:alert] = "Welcome to the Sample App! Your email has been confirmed.
       #Please sign in to continue."
       session[:user_id] = user.id
-      redirect_to user, notice: "Logged in!"
+      redirect_to root_url, notice: "Logged in!"
       #redirect_to login_path
     else
       flash[:alert] = "Sorry. User does not exist"

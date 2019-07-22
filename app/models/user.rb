@@ -15,7 +15,7 @@ class User < ApplicationRecord
   validates :email, presence: true, format: { with: URI::MailTo::EMAIL_REGEXP }
 
   #validates :password, confirmation: { case_sensitive: true } ,
-            #length: { minimum: 3 }
+   #         length: { minimum: 3 }
   validates_uniqueness_of :email , except: [:edit]
 
   def email_activate

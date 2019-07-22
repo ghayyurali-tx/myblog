@@ -11,10 +11,12 @@
       <div>
         <span class="label label-primary"> Logged in as <%= current_user.email %></span>
 
-        <%= link_to 'Profile',current_user,class: 'btn btn-info btn-xs'%>
+        <%= link_to 'Home', root_url ,class: 'btn btn-success btn-xs'%>
         <% if current_user.role == "admin" %>
           <%= link_to 'Admin Panel', users_path, class: 'btn btn-danger btn-xs' %>
         <%end %>
+        <%= link_to 'Profile',current_user,class: 'btn btn-info btn-xs'%>
+
         <%= link_to 'Log Out', logout_path, class: 'btn btn-danger btn-xs' %>
         <br><br>
 
@@ -35,7 +37,7 @@
           <div class="row">
             <div class="portfolio-items isotopeWrapper clearfix" id="3">
               <% @user = User.find(params[:user_id])%>
-              <% @articles.each do |article| %>
+              <% @user.articles.each do |article| %>
 
               <article class="col-md-4">
                 <div class="imgBlock">
