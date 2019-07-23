@@ -17,7 +17,7 @@
         <div id="error_explanation">
 
             <% @article.errors.full_messages.each do |msg| %>
-              <li><%= msg %></li>
+            <p class = "text text-danger">*&nbsp<%= msg %></p>
             <% end %>
 
         </div>

@@ -9,7 +9,7 @@
 
 <p>
       <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+      <p class = "text text-danger">*&nbsp<%= msg %></p>
       <% end %>
 
   </div>
@@ -25,17 +25,14 @@
   <p>
   <%= form.text_field :email,:disabled => true %></p>
 
-
     <label for="password">Password</label>
-  <p>
-  <%= form.password_field :password %></p>
+    <p>
+      <%= form.password_field :password %></p>
 
+    <label for="Password">Confirm Password</label>
+    <p>
+      <%= form.text_field :password_confirmation %></p>
 
-
-
-      <label for="password">Confirm Password</label>
-  <p>
-  <%= form.password_field :password_confirmation %></p>
 
 
 

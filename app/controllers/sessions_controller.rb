@@ -11,14 +11,14 @@ class SessionsController < ApplicationController
         session[:user_id] = user.id
         redirect_to root_url, notice: "Logged in!"
       else
-        flash.now[:alert] = 'Please activate your account by following the
+        flash.now[:alert] = '* Please activate your account by following the
         instructions in the account confirmation email you received to proceed'
         render 'new'
       end
 
     else
 
-      flash.now[:alert] = "Email or password is invalid"
+      flash.now[:alert] = "* Email or password is invalid"
       render "new"
     end
   end
