@@ -9,21 +9,20 @@
         <% end %>
     </div>
   <% end %>
-    <div class="form-label-group">
-  <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title, class: 'form-control' %>
-  </p></div>
 
-    <div class="form-label-group">
-  <p>
-    <%= form.label :text %><br>
+
+    <%= form.label :title %><p>
+    <%= form.text_field :title, class: 'form-control' %>
+  </p>
+
+
+  
+    <%= form.label :text %><p>
     <%= form.text_area :text, class: 'form-control' %>
-  </p></div>
+  </p>
 
   <p>
     <%= form.submit 'Submit', class: "btn btn-success btn-xs" %>
-    <%= link_to 'Back', user_articles_path(current_user), class: 'btn btn-primary btn-xs' %>
   </p>
   </div>
 <% end %>
