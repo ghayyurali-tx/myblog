@@ -1,16 +1,24 @@
 class UsersController < ApplicationController
-   layout "for_login", except: [:index, :confirm_email, :destroy, :show]
+   #layout "for_login", except: [:index, :confirm_email, :destroy, :show]
+   #layout "users_index"
   def index
 
     @user = User.all
+    render layout: 'users_index'
 
   end
 
-  def new
-
+  def user_new
+  #render layout: "for_login"
     @user = User.new
-
-
+    if current_user
+    if current_user.role == 'admin'
+       render layout: 'users_index'
+      else
+    end
+    else
+       render layout: "for_login"
+    end
   end
 
   def edit
@@ -18,7 +26,6 @@ class UsersController < ApplicationController
   end
 
   def create
-
     @user = User.new(user_params)
 
     if @user.save
@@ -26,9 +33,26 @@ class UsersController < ApplicationController
       @user.save(:validate => false)
       UserMailer.registration_confirmation(@user).deliver_now
       flash[:alert] = "Please confirm your email address to continue"
+      if current_user
+        if current_user.role == 'admin'
+          redirect_to users_path
+          else
+        end
+        else
       redirect_to root_url
+      end
     else
-      render 'new'
+      if current_user
+        if current_user.role == 'admin'
+          render 'user_new', layout: 'users_index'
+        else
+        end
+      else
+        render 'user_new', layout: 'for_login'
+      end
+
+
+
     end
     end
 

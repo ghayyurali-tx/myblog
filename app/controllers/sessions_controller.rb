@@ -9,7 +9,12 @@ class SessionsController < ApplicationController
       #user.email_confirmed = true
       if user.email_confirmed
         session[:user_id] = user.id
-        redirect_to root_url, notice: "Logged in!"
+        if user.admin?
+          redirect_to users_url
+        else
+          redirect_to root_url, notice: "Logged in!"
+        end
+
       else
         flash.now[:alert] = '* Please activate your account by following the
         instructions in the account confirmation email you received to proceed'

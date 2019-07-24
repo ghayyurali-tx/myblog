@@ -1,0 +1,52 @@
+<% if current_user %>
+  <div class="container">
+
+    <% if current_user.role == "admin" %>
+      <div class="page-header">
+        <h1>Users</h1>
+      </div>
+      <span class="label label-primary"> Logged in as <%= current_user.email %></span>
+      <%= link_to 'Log Out', logout_path, class: 'btn btn-danger btn-xs' %>
+      <%= link_to 'Profile', current_user, class: 'btn btn-info btn-xs' %>
+      <%= link_to 'Articles', user_articles_path(current_user), class: 'btn btn-primary btn-xs' %>
+      <p>
+        <br>
+        <%= link_to 'Add New User', new_user_path, class: 'btn btn-success text-uppercase' %>
+      </p>
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <br>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Token-Status</th>
+          <th>Token</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @user.each do |user| %>
+          <tr>
+            <td><%= user.name %></td>
+            <td><%= user.email %></td>
+            <td><%= user.email_confirmed %></td>
+            <td><%= user.confirm_token %></td>
+            <td><%= link_to 'Show', user_path(user), class: 'label label-info' %></td>
+            <td><%= link_to 'Edit', edit_user_path(user), class: 'label label-success'%></td>
+            <td><%= link_to 'Destroy', user_path(user),
+                            method: :delete,
+                            data: { confirm: 'Are you sure?' }, class: 'label label-danger' %></td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table><br>
+      </div>
+    <%else %>
+      <div class="container">
+        <div class="text-center">
+          <h1><span class="label label-danger">
+    ONLY ADMIN CAN VIEW THIS</span></h1></div></div>
+    <%end %>
+
+
+<%end %>

@@ -1,0 +1,11 @@
+<% if current_user %>
+<% if current_user.role == 'admin' %>
+  <%=render 'admin_signup' %>
+    <% else %>
+  <%end %>
+  <%else %>
+<%= render 'signup4' %>
+
+<%end %>
+
+
