@@ -6,7 +6,32 @@
         <div class="col-md-6">
           <h1>My Blog</h1>
           <!--<img class="navbar-logo" src="img/logo.png" alt="Vector Logo">-->
+
+
         </div>
+
+      <div class="col-md-6">
+        <div class="row">
+          <%= form_tag(user_articles_path, method: :get, html: {class: 'form-search'}) do %>
+          <form class="form-search">
+
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+
+
+              <div class="form-group">
+                <%= text_field_tag :search, params[:search],class: 'form-control', placeholder: 'Search Articles', value: '' %>
+               <%#= submit_tag 'Search', name: nil,class: 'btn btn-primary' %>
+                <button type="submit" class="btn btn-primary" data-disable-with="Go">
+                  Go
+                </button>
+
+            </div>
+            </div>
+          </form>
+          <% end %>
+        </div>
+      </div>
       </div>
       <div>
         <span class="label label-primary"> Logged in as <%= current_user.email %></span>
@@ -24,20 +49,32 @@
         <i class="glyphicon glyphicon-plus"></i> Create Article
         <%end %>
 
-
       </div>
+
+
 
     </div>
   </section>
 
   <section id="section-works" class="section appear clearfix">
     <div class="container">
+      <% @user = User.find(params[:user_id])%>
+      <% if @user.articles.search(params[:search]).count == 0  %>
+        <h2 class="text-danger">No Article Found</h2>
+        <%=link_to 'Return to My Articles',  user_articles_path, class: 'btn btn-info' %>
+      <%else %>
+      <%end %>
       <div class="row">
+
         <div class="col-md-12">
           <div class="row">
+
             <div class="portfolio-items isotopeWrapper clearfix" id="3">
-              <% @user = User.find(params[:user_id])%>
-              <% @user.articles.each do |article| %>
+
+
+              <%#articles = Article.search(params[:search]) %>
+
+              <% @user.articles.search(params[:search]).each do |article| %>
 
               <article class="col-md-4">
                 <div class="imgBlock">

@@ -2,7 +2,15 @@ class ArticlesController < ApplicationController
 layout "articles_index" ,only: [ :index]
 
   def index
+    # @articles = Article.search(params[:search])
     @articles = Article.all
+    # if params[:search]
+    #   @articles =   Article.where("lower(:title) LIKE :title",title: "%#{:search.downcase}%")
+    # else
+    #   @articles = Article.all
+    # end
+
+    #@articles = Article.all
     #@user = User.find(params[:user_id])
     #@article = @user.articles.find(params[:id])
   end
@@ -59,6 +67,6 @@ layout "articles_index" ,only: [ :index]
 
   private
   def article_params
-    params.require(:article).permit(:title, :text)
+    params.require(:article).permit(:title, :text, :search)
   end
 end
