@@ -83,11 +83,15 @@
                   <div class="img-overlay">
                     <p class="img-btn">
                       <span class="date"><%= article.updated_at.strftime("%b %d, %Y") %></span>
-
+                      <%if article.likes.count == 0 %>
+                        <%else %>
+                      <span>|</span>
+                      <span class="url-text"><%= article.likes.count %> <%= (article.likes.count) == 1 ? 'Like' : 'Likes'%></span>
+                        <%end %>
                       <% if article.user == @user || current_user.role == "admin" %>
                         <span>|</span>
                       <%= link_to 'Edit', edit_user_article_path(@user,article), class: "url-text"%>
-                        <span>-</span>
+                        <span>|</span>
                       <%= link_to 'Delete', [article.user, article],
                                   method: :delete,
                                   data: { confirm: 'Are you sure?' }, class: 'url-text' %>

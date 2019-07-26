@@ -83,8 +83,11 @@
                       <div class="img-overlay">
                         <p class="img-btn">
                           <span class="date"><%= article.updated_at.strftime("%b %d, %Y") %></span>
-<span>|</span>
-                          <span class="url-text"><%= article.likes.count %> <%= (article.likes.count) == 1 ? 'Like' : 'Likes'%></span>
+                          <%if article.likes.count == 0 %>
+                          <%else %>
+                            <span>|</span>
+                            <span class="url-text"><%= article.likes.count %> <%= (article.likes.count) == 1 ? 'Like' : 'Likes'%></span>
+                          <%end %>
 
                           <% if article.user == current_user || current_user.role == "admin" %>
                             <span>|</span>

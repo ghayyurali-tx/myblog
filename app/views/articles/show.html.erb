@@ -4,8 +4,11 @@
 
 <h1><%= @article.title %></h1>
       <span class="label label-primary"> Last update <%= @article.updated_at.strftime("%b %d, %Y") %></span>
+    <%if @article.likes.count ==0 %>
+      <%else %>
     <span>|</span>
       <span class="label label-info"><%= @article.likes.count %> <%= (@article.likes.count) == 1 ? 'Like' : 'Likes'%></span>
+      <%end %>
       </div>
 
     <div class="panel panel-default">
