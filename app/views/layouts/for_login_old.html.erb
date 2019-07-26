@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>My Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta content="A fully featured blog by Ghayyur Ali" name="description" />
+  <meta content="Coderthemes" name="author" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <%= stylesheet_link_tag "login.css" , media: 'all', 'data-turbolinks-track': 'reload'%>
+  <%= stylesheet_link_tag "bootstrap.css", media: 'all', 'data-turbolinks-track': 'reload' %>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+</head>
+
+
+<body>
+<%= yield %>
+
+<%= javascript_include_tag 'bootstrap.min.js', 'data-turbolinks-track': 'reload'  %>
+</body>
+</html>
