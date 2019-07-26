@@ -1,4 +1,4 @@
-<div  class="m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default"  >
+<body  class="m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default"  >
 <!-- begin:: Page -->
 <div class="m-grid m-grid--hor m-grid--root m-page">
   <!-- BEGIN: Header -->
@@ -48,6 +48,50 @@
           <div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general m-stack--fluid">
             <div class="m-stack__item m-topbar__nav-wrapper">
               <ul class="m-topbar__nav m-nav m-nav--inline">
+
+<!--                Begin: Search-->
+                <li class="m-nav__item m-dropdown m-dropdown--small m-dropdown--arrow m-dropdown--align-center m-dropdown--mobile-full-width m-dropdown--skin-light	m-list-search m-list-search--skin-light"
+                    m-dropdown-toggle="click" id="m_quicksearch" m-quicksearch-mode="dropdown" m-dropdown-persistent="1">
+                  <a href="#" class="m-nav__link m-dropdown__toggle">
+                                        <span class="m-nav__link-icon">
+                                            <i class="flaticon-search-1"></i>
+                                        </span>
+                  </a>
+
+                  <div class="m-dropdown__wrapper">
+                    <span class="m-dropdown__arrow m-dropdown__arrow--center"></span>
+                    <div class="m-dropdown__inner ">
+                      <div class="m-dropdown__header">
+
+                        <%= form_tag(users_path, method: :get, html: {class: 'm-list-search__form'}) do %>
+
+                          <form  class="m-list-search__form">
+
+<!--                          <div class="m-list-search__form-wrapper">-->
+
+<!--                                                        <span class="m-list-search__form-input-wrapper">-->
+
+                                                          <%= text_field_tag :search, params[:search],class: 'm-list-search__form', placeholder: 'Search..', value: '', id: 'm_quicksearch_input', :size=>"13" %>
+<!--                                                            <input id="m_quicksearch_input"  type="text" name="search" class="m-list-search__form-input" value="" placeholder="Search..." />-->
+<!--                                                        </span>-->
+<!--                            <span class="m-list-search__form-icon-close" id="m_quicksearch_close">-->
+<!--                                                            <i class="la la-remove"></i>-->
+<!--                                                        </span>-->
+<!--                          </div>-->
+                          </form>
+                        <%end %>
+                      </div>
+<!--                      <div class="m-dropdown__body">-->
+<!--                        <div class="m-dropdown__scrollable m-scrollable" data-scrollable="true" data-max-height="300" data-mobile-max-height="200">-->
+<!--                          <div class="m-dropdown__content"></div>-->
+<!--                        </div>-->
+<!--                      </div>-->
+                    </div>
+                  </div>
+
+                </li>
+<!--End: Search-->
+
 
                 <li class="m-nav__item m-topbar__user-profile m-topbar__user-profile--img  m-dropdown m-dropdown--medium m-dropdown--arrow m-dropdown--header-bg-fill m-dropdown--align-right m-dropdown--mobile-full-width m-dropdown--skin-light" m-dropdown-toggle="click">
                   <a href="#" class="m-nav__link m-dropdown__toggle">
@@ -266,8 +310,11 @@
           </div>
           <div class="m-portlet__body">
             <!--begin: Datatable -->
+            <%#if @user.search(params[:search]).count==0 %>
+<!--              <h2 class="text-danger">No User Found!</h2>-->
+              <%#else %>
 
-            <table class="table table-striped- table-bordered table-hover table-checkable" id="m_table_1">
+            <table class="table table-striped- table-bordered table-hover table-checkable">
               <thead>
               <tr>
                 <th>ID</th>
@@ -280,7 +327,8 @@
                 </th>
               </tr>
               </thead>
-              <% @user.each do |user| %>
+
+              <% @user.search(params[:search]).each do |user| %>
               <tbody>
                 <tr>
                   <td><%= user.id %></td>
@@ -304,6 +352,7 @@
               </tbody>
               <% end %>
             </table>
+              <%#end %>
           </div>
         </div>
         <!-- END EXAMPLE TABLE PORTLET-->
@@ -311,10 +360,22 @@
     </div>
   </div>
   <!-- end:: Body -->
+
   <!-- begin::Footer -->
+  <footer class="m-grid__item		m-footer ">
+    <div class="m-container m-container--fluid m-container--full-height m-page__container">
+      <div class="m-stack m-stack--flex-tablet-and-mobile m-stack--ver m-stack--desktop">
+        <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--last">
+                    <span class="m-footer__copyright">
+                        2019 &copy; Blog by Ghayyur Ali
+                    </span>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- end::Footer -->
 </div>
 <!-- end:: Page -->
 <!-- begin::Quick Sidebar -->
-</div>
+</body>

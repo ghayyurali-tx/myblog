@@ -3,6 +3,7 @@ class User < ApplicationRecord
   has_secure_password
   has_many :articles, dependent: :destroy
   has_many :comments, dependent: :destroy
+  has_many :likes, dependent: :destroy
 
   enum role: [:user, :vip, :admin]
   after_initialize :set_default_role, :if => :new_record?
@@ -17,6 +18,22 @@ class User < ApplicationRecord
   validates_confirmation_of :password, confirmation: { case_sensitive: true }
   validates_length_of :password, minimum: 3
   validates_uniqueness_of :email , except: [:edit]
+
+  def self.search(search)
+    #debugger
+    if search
+      User.where("lower(name) LIKE ?","%#{search.downcase}%")
+#   # debugger
+#   # if article
+#   #   article
+    else
+      User.all
+    end
+    # else
+    #   Article.all
+    #
+    # end
+  end
 
   def email_activate
     self.email_confirmed = true

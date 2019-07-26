@@ -4,8 +4,9 @@
 
 <h1><%= @article.title %></h1>
       <span class="label label-primary"> Last update <%= @article.updated_at.strftime("%b %d, %Y") %></span>
+    <span>|</span>
+      <span class="label label-info"><%= @article.likes.count %> <%= (@article.likes.count) == 1 ? 'Like' : 'Likes'%></span>
       </div>
-
 
     <div class="panel panel-default">
       <div class="panel-body">
@@ -14,14 +15,21 @@
 </p>
 
       </div>
-      <div class="panel-footer">By:<strong> <%=@article.user.name %></strong></div>
+      <div class="panel-footer">By:<strong> <%=@article.user.name %></strong>
+      </div>
     </div>
 </div>
   <div class="container">
     <% @user = User.find(params[:user_id])%>
-    <% if @article.user == @user || current_user.role == "admin" %>
-    <%= link_to 'Edit Article', edit_user_article_path(@article),class: 'btn btn-success btn-xs'%>
+    <% if @article.user == current_user || current_user.role == "admin" %>
+    <%= link_to 'Edit Article', edit_user_article_path(@article),class: 'btn btn-warning btn-xs'%>
       <%end %>
+    <% pre_like = @article.likes.find { |like| like.user_id == current_user.id} %>
+    <% if pre_like %>
+      <%= link_to 'Unlike', article_like_path(@article, pre_like), method: :delete, class: 'btn btn-danger btn-xs' %>
+    <% else %>
+      <%= link_to 'Like', article_likes_path(@article), method: :post,class: 'btn btn-success btn-xs'  %>
+    <% end %>
     <%= link_to 'Home', root_url ,class: 'btn btn-primary btn-xs'%>
     <%= link_to 'My Articles', user_articles_path ,class: 'btn btn-info btn-xs'%>
   </div>
@@ -42,7 +50,7 @@
       </div>
 
   <p>
-    <% if comment.user == @user || current_user.role == "admin"  %>
+    <% if comment.user == current_user || current_user.role == "admin"  %>
     <%= link_to 'Remove', [@article.user,comment.article, comment],
                 method: :delete,
                 data: { confirm: 'Are you sure?' }, class: 'label label-danger' %>
@@ -56,10 +64,9 @@
 <h3>Add a comment:</h3>
 <%= form_with(model: [ @user,@article, @article.comments.build ], local: true) do |form| %>
         <div class="form-group">
-    <label for="username">Commenter</label>
+<!--    <label for="username">Commenter</label>-->
     <p>
-    <%= form.text_field :commenter, value: current_user.name %></p>
-
+    <%= form.text_field :commenter, value: current_user.name, class: 'hide' %></p>
 
   <p>
     <%= form.text_area :body, class:'form-control'%></p>
