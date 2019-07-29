@@ -23,17 +23,21 @@
         </div>
       <% end %>
 
-      <div class="form-label-group">
+
       <p>
         <%= form.label :title %><br>
         <%= form.text_field :title, class: 'form-control' %>
-      </p></div>
+      </p>
 
-      <div class="form-label-group">
+
       <p>
         <%= form.label :text %><br>
         <%= form.text_area :text, class: 'form-control' %>
-      </p></div>
+      </p>
+
+      <%= form.label :image %><p>
+      <%= form.file_field :image, data: { max_file_size: 5.megabytes } %>
+    </p>
 
       <p>
         <%= form.submit 'Submit', class: "btn btn-success btn-xs" %>

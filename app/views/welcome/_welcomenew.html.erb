@@ -79,7 +79,11 @@
                 <article class="col-md-4">
                   <div class="imgBlock">
                     <div class="img-container">
-                      <%= image_tag("portfolio/img1.jpg") %>
+                      <% if article.image_url.to_s != "" %>
+                        <%= image_tag article.image_url.to_s, alt: 'Image', class: 'img-responsive' %>
+                      <%else %>
+                        <%= image_tag("portfolio/img1.jpg") %>
+                      <%end %>
                       <div class="img-overlay">
                         <p class="img-btn">
                           <span class="date"><%= article.updated_at.strftime("%b %d, %Y") %></span>

@@ -67,6 +67,6 @@ layout "articles_index" ,only: [ :index]
 
   private
   def article_params
-    params.require(:article).permit(:title, :text, :search)
+    params.require(:article).permit(:title, :text, :search, :image)
   end
 end
