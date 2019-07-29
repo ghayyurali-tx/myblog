@@ -80,7 +80,8 @@
                 <div class="imgBlock">
                   <div class="img-container">
                     <% if article.image_url.to_s != "" %>
-                      <%= image_tag article.image_url.to_s, alt: 'Image', class: 'img-responsive' %>
+
+                      <%= image_tag article.image_url.to_s, alt: 'Image', class: 'img-responsive '%>
                       <%else %>
                       <%= image_tag("portfolio/img1.jpg") %>
                       <%end %>

@@ -4,6 +4,7 @@ gem "bcrypt", "~> 3.1.7"
 gem "font-awesome-rails"
 gem 'figaro'
 gem 'carrierwave'
+gem 'mini_magick'
 
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.2.0'

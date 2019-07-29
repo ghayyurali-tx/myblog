@@ -1,6 +1,7 @@
 class Article < ApplicationRecord
   belongs_to :user
   validate :image_size_validation
+  validate :validate_minimum_image_size
   include CarrierWave::Validations::ActiveModel
   mount_uploader :image, ImageUploader
 
@@ -31,5 +32,12 @@ end
   def image_size_validation
     errors[:image] << "should be less than 5MB" if image.size > 5.megabytes
   end
+
+  def validate_minimum_image_size
+    # image = MiniMagick::Image.open(image.path)
+
+      errors[:image] << "should be greater than or equal to 720x550"  if image.width < 720 && image.height < 550
+
+    end
 
 end
