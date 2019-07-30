@@ -5,13 +5,13 @@ gem "font-awesome-rails"
 gem 'figaro'
 gem 'carrierwave'
 gem 'mini_magick'
-
+gem 'bootsnap'
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.7'
+gem 'rails', '~> 5.2'
 # Use sqlite3 as the database for Active Record
 # Use Puma as the app server
 
