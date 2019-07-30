@@ -3,8 +3,10 @@ source 'https://rubygems.org'
 gem "bcrypt", "~> 3.1.7"
 gem "font-awesome-rails"
 gem 'figaro'
-gem 'carrierwave'
+# gem 'carrierwave'
 gem 'mini_magick'
+gem 'image_processing'
+gem 'active_storage_validations'
 gem 'bootsnap'
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.2.0'
