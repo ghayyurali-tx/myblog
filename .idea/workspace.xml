@@ -2,11 +2,126 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8d926bc-ab1d-45e8-8f97-75f62639b161" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/views/articles/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/articles/_indexnew.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/_indexnew.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/for_login.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/for_login.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/sessions/_newlogin2.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sessions/_newlogin2.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/welcome/_welcomenew.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/welcome/_welcomenew.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/blog1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/p1-full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/p2-full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/portfolio/img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/portfolio/img3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/portfolio/img4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/portfolio/img5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/portfolio/img6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/portfolio/img7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/portfolio/img8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/portfolio/img9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/users/u1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/users/u2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/users/u3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/users/u4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/bg/bg-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/bg/bg-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/bg/bg-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/bg/bg-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/bg/bg-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/bg/bg-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/bg/bg-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/blog/blog1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/blog/blog2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/blog/blog3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/blog/blog4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/blog/blog5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/client-logos/logo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/client-logos/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/client-logos/logo3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/client-logos/logo4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/client-logos/logo5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/envato/screen1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/envato/screen2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/error/bg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/error/bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/error/bg3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/error/bg4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/error/bg5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/error/bg6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/css.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/csv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/doc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/html.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/javascript.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/jpg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/mp4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/pdf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/xml.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/zip.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/logos/logo-12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/logos/logo-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/logos/logo-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/logos/logo_client_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/logos/logo_client_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/logos/logo_invoice_dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/logos/logo_invoice_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/misc/notification_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/misc/quick_actions_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/misc/user_profile_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/user1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/user2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/user3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/user5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/demo/default/media/img/logo/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/demo/default/media/img/logo/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/demo/default/media/img/logo/logo_compact.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/demo/default/media/img/logo/logo_default_dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/demo/default/media/img/logo/logo_default_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article/image/41/img3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article/image/42/img5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article/image/80/img6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article/image/82/img7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article/image/83/img8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article/image/84/img9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article/image/86/img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article/image/88/img4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article/image/91/bg-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article/image/94/800px-Pizigani_1367_Chart_10MB.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -40,21 +155,72 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/articles/_indexnew.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="96" />
+              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sessions/_newlogin2.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="199" lean-forward="true" selection-start-line="3" selection-start-column="199" selection-end-line="3" selection-end-column="199" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/for_login.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="27" column="74" lean-forward="true" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/welcome/_welcomenew.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="58" lean-forward="true" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+            <state relative-caret-position="49">
+              <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/_admin_signup.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="14" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/_new_index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="97" column="33" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,7 +228,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/articles/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
+            <state relative-caret-position="408">
               <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
             </state>
           </provider>
@@ -86,6 +252,7 @@
       <find>href</find>
       <find>..</find>
       <find>active</find>
+      <find>img</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -155,7 +322,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="85" />
     <option name="y" value="24" />
     <option name="width" value="1281" />
@@ -187,13 +354,6 @@
               <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
@@ -245,6 +405,13 @@
               <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="welcome" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -269,6 +436,12 @@
               <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -285,16 +458,18 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/assets" />
-      <recent name="$PROJECT_DIR$/app/assets/javascripts" />
-      <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
       <recent name="$PROJECT_DIR$/app/assets" />
       <recent name="$PROJECT_DIR$/app/assets/images" />
       <recent name="$PROJECT_DIR$/app/assets/javascripts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/app/media/img/bg" />
+      <recent name="$PROJECT_DIR$/public/assets/app/media/img/misc" />
+      <recent name="$PROJECT_DIR$/public/assets" />
+      <recent name="$PROJECT_DIR$/app/assets/javascripts" />
+      <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -445,21 +620,22 @@
       <workItem from="1564047557749" duration="21625000" />
       <workItem from="1564135092874" duration="24412000" />
       <workItem from="1564420446812" duration="599000" />
+      <workItem from="1564564489270" duration="2090000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="425446000" />
+    <option name="totallyTimeSpent" value="427536000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <frame x="64" y="-11" width="1303" height="780" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27171314" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27649403" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32868218" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32868218" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32868218" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -501,149 +677,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/articles_index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="47" selection-start-line="15" selection-end-line="15" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/_indexold.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_old_index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="51" column="8" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="51" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/vendors/custom/datatables/datatables.bundle.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/vendors/custom/datatables/datatables.bundle.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/vendors.bundle.css" />
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/datatables.bundle.css" />
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.bundle.css" />
-    <entry file="file://$PROJECT_DIR$/app/views/users/user_new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/test.html.erb" />
-    <entry file="file://$PROJECT_DIR$/app/views/users/_new_index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/for_login_old.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/users_index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_signup_old.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="82" column="22" lean-forward="true" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -655,13 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="25" column="50" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_admin_signup.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="14" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -705,13 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="82" selection-start-line="10" selection-start-column="82" selection-end-line="10" selection-end-column="82" />
         </state>
       </provider>
     </entry>
@@ -787,32 +806,135 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/articles/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
+        <state relative-caret-position="408">
           <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/users/author.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/users/u2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/users/u4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/blog1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/p1-full.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/portfolio/img1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/logos/logo-1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/misc/quick_actions_bg.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/products/product1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/users/100_1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/users/user1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/_welcomenew.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/_admin_signup.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/users/user4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/icons/warning.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/icons/logout.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/error/bg1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/client-logos/logo1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/blog/blog1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/bg/bg-1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/bg/bg-2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/demo/default/media/img/logo/logo_compact.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/demo/default/media/img/logo/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/demo/default/media/img/logo/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/_new_index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="97" column="33" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/_indexnew.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/_newlogin2.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="199" lean-forward="true" selection-start-line="3" selection-start-column="199" selection-end-line="3" selection-end-column="199" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/favicon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/for_login.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sessions/_newlogin2.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/_indexnew.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/_welcomenew.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="58" lean-forward="true" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+        <state relative-caret-position="267">
+          <caret line="27" column="74" lean-forward="true" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
         </state>
       </provider>
     </entry>
