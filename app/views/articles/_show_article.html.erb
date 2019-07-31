@@ -1,0 +1,170 @@
+<!--   header section-->
+<section id="section-services" class="section pad-bot30 bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <a href="<%=root_path %>">
+          <h1>My Blog</h1></a>
+        <h6><span class="label label-info">Logged in as <%= current_user.email %> </span></h6>
+        <!--          <img class="navbar-logo" src="img/logo.png" alt="Vector Logo" style="width: 35%">-->
+      </div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-md-8">
+            <!--              <a class="btn btn-default" href="Logged in as admin@gamil.com"> Logged in as admin@gamil.com </a>-->
+            <a class="btn btn-default" href="<%=new_user_article_path(current_user) %>"> + Create Article</a>
+            <a class="btn btn-default" href="<%=root_path %>"> Home</a>
+            <a class="btn btn-default" href="<%=user_path(current_user) %>"> Profile </a>
+            <% if current_user.role == "admin" %>
+              <a class="btn btn-default" href="<%=users_path %>"> Admin Panel </a>
+            <%end %>
+            <a class="btn btn-default" href="<%=logout_path %>"> Log Out </a>
+          </div>
+          <!--            Search Begin-->
+          <div class="col-md-4">
+            <%= form_tag(root_url, method: :get, html: {class: 'form-search'}) do %>
+              <form class="form-search">
+
+                <div class="form-group">
+                  <%= text_field_tag :search, params[:search],class: 'form-control', placeholder: 'Search Articles', value: '' %>
+                  <%#= submit_tag name: nil,class: 'btn btn-primary' %>
+                  <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-search"></i>
+                  </button>
+
+                </div>
+              </form>
+            <%end %>
+          </div>
+          <!--            Search End-->
+        </div>
+      </div>
+      <!--        <div class="col-md-12">-->
+      <!--          <a href="create_article.html" class="btn btn-success">+ Create Article</a>-->
+      <!--        </div>-->
+    </div>
+  </div>
+</section>
+
+<!-- section works -->
+<section id="section-works" class="section appear clearfix">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <h1><%= @article.title %> </h1>
+      </div>
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-1">
+            <img src="/img/user.jpg" alt="User image" class="user_image">
+          </div>
+          <div class="col-md-2">
+            <p>
+              <%=@article.user.name %><span>&nbsp&nbsp</span>
+              <a class="btn btn-default btn-follow btn-xs" href="#"> Follow </a>
+            </p>
+            <p>Last update:<span>&nbsp</span> <%= @article.updated_at.strftime("%b %d, %Y") %></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <br>
+        <% if @article.image.attached? %>
+
+          <%= image_tag @article.image, alt: 'Back Ground image', class: 'bc-image'%>
+        <%else %>
+          <%= image_tag("portfolio/img1.jpg", alt: 'Back Ground image', class: 'bc-image') %>
+        <%end %>
+<!--        <img src="/img/bg-4.jpg" alt="Back Ground image" class="bc-image">-->
+      </div>
+      <div class="col-md-12">
+        <p class="blog-para">
+       <%=@article.text %>
+        </p>
+        <br>
+      </div>
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-10">
+            <a class="btn btn-default btn-follow" href="#"> Follow </a>
+            <a class="btn btn-default btn-follow" href="#"> Follow </a>
+            <a class="btn btn-default btn-follow" href="#"> Follow </a>
+            <a class="btn btn-default btn-follow" href="#"> Follow </a>
+            <a class="btn btn-default btn-follow" href="#"> Follow </a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-primary btn-like" href="#"> Like </a>
+            <span style="margin-left: 20%">10</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <hr class="blog-hr">
+      </div>
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="/img/user.jpg" alt="User image" class="user_image">
+          </div>
+          <div class="col-md-8">
+            <h4>Written by</h4>
+            <h2><%=@article.user.name %></h2>
+<!--            <p>-->
+<!--              Writes about relationships and pop psychology for The New York Times, Vice, and more. Author of “Clearly, I Didn’t Think This Through.” Lives in Philly.-->
+<!--            </p>-->
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-default btn-follow" href="#"> Follow </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <hr class="blog-hr">
+      </div>
+      <div class="col-md-12 comment-section">
+        <h2>Comments</h2>
+        <div class="row">
+          <% @article.comments.each do |comment| %>
+          <div class="col-md-12">
+
+            <div class="row">
+              <br>
+              <div class="col-md-1">
+
+                <img src="/img/user.jpg" alt="User image" class="comment_image">
+              </div>
+              <div class="col-md-8">
+                <p>
+                 <strong> <%= comment.commenter %></strong>
+                </p>
+
+                <p>
+                 <%= comment.body %>
+                </p>
+
+                <p>
+                  <% if comment.user == current_user || current_user.role == "admin"  %>
+                    <%= link_to 'Remove', [@article.user,comment.article, comment],
+                                method: :delete,
+                                data: { confirm: 'Are you sure?' } %>
+                  <%end %>
+                </p>
+
+              </div>
+            </div>
+          </div>
+            <%end %>
+          <div class="col-md-12">
+            <form>
+              <br>
+              <textarea class="form-control col-md-12"></textarea>
+              <button class="btn btn-success" style="margin-top: 2%; float: right;">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

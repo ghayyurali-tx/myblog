@@ -22,6 +22,7 @@ layout "create_article", only: [:new, :update, :edit, :create]
     #@article = @user.articles.find(params[:id])
 
     @article = Article.find(params[:id])
+    render layout: 'articles_index'
   end
 
   def new
