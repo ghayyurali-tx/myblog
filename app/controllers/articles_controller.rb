@@ -1,9 +1,11 @@
 class ArticlesController < ApplicationController
-layout "articles_index" ,only: [ :index]
+# layout "articles_index" ,only: [ :index]
+layout "create_article", only: [:new, :update, :edit, :create]
 
   def index
     # @articles = Article.search(params[:search])
     @articles = Article.all
+    render layout: 'articles_index'
     # if params[:search]
     #   @articles =   Article.where("lower(:title) LIKE :title",title: "%#{:search.downcase}%")
     # else
@@ -41,7 +43,7 @@ layout "articles_index" ,only: [ :index]
     if @article.save
       redirect_to user_article_path(@user,@article)
     else
-      render 'new'
+      render 'new', layout: 'create_article'
     end
   end
 
@@ -52,7 +54,7 @@ layout "articles_index" ,only: [ :index]
     if @article.update(article_params)
       redirect_to user_article_path(@user,@article)
     else
-      render 'edit'
+      render 'edit', layout: 'create_article'
     end
   end
 

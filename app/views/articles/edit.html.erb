@@ -1,51 +1,6 @@
 <%if current_user %>
-  <div class="container">
-    <div  class="page-header">
-<h1>Edit Article</h1>
-    </div></div>
-  <div class="container">
-    <span class="label label-primary"> Logged in as <%= current_user.email %></span>
-    <%= link_to 'Articles', user_articles_path(current_user), class: 'btn btn-primary btn-xs' %>
-    <%= link_to 'Log Out', logout_path, class: 'btn btn-danger btn-xs' %>
-  </div><br>
-<div class="container">
-<%= form_with model: @article, url: user_article_path, local: true do |form| %>
-
-    <div class="form-group">
-
-      <% if @article.errors.any? %>
-        <div id="error_explanation">
-
-            <% @article.errors.full_messages.each do |msg| %>
-            <p class = "text text-danger">*&nbsp<%= msg %></p>
-            <% end %>
-
-        </div>
-      <% end %>
-
-
-      <p>
-        <%= form.label :title %><br>
-        <%= form.text_field :title, class: 'form-control' %>
-      </p>
-
-
-      <p>
-        <%= form.label :text %><br>
-        <%= form.text_area :text, class: 'form-control' %>
-      </p>
-
-      <%= form.label :image %><p>
-      <%= form.file_field :image, onchange: 'validate_minimum_image_size', data: { max_file_size: 5.megabytes } %>
-    </p>
-
-      <p>
-        <%= form.submit 'Submit', class: "btn btn-success btn-xs" %>
-        <%= link_to 'Cancel',user_articles_path, class: 'btn btn-danger btn-xs' %>
-      </p>
-    </div>
-<% end %>
-
+  <%= javascript_include_tag 'image.change' %>
+  <%= render 'edit_article' %>
 
   </div>
 <%end %>

@@ -13,8 +13,10 @@
 
   <%= stylesheet_link_tag "style.css", media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= stylesheet_link_tag "default.css", media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
+<!--  <link rel="stylesheet" href="/css/bootstrap.css">-->
+  <%#= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag "rails-ujs", 'data-turbolinks-track': 'reload' %>
+  <%= csrf_meta_tag %>
 </head>
 
 <body>

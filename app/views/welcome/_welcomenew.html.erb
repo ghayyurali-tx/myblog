@@ -1,58 +1,107 @@
 <%if current_user %>
 
+<!--  <section id="section-services" class="section pad-bot30 bg-white">-->
+<!--    <div class="container">-->
+<!--      <div class="row">-->
+<!--        <div class="col-md-6">-->
+<!--          <h1>My Blog</h1>-->
+<!--          <h5><span class="label label-info">Logged in as <%#= current_user.email %> </span></h5>-->
+
+<!--        </div>-->
+
+<!--        <div class="col-md-6">-->
+<!--          <div class="row">-->
+            <%#= form_tag(root_url, method: :get, html: {class: 'form-search'}) do %>
+<!--              <form class="form-search">-->
+
+<!--                <div class="col-md-6"></div>-->
+<!--                <div class="col-md-6">-->
+
+
+<!--                  <div class="form-group">-->
+                    <%#= text_field_tag :search, params[:search],class: 'form-control', placeholder: 'Search Articles', value: '' %>
+                    <%#= submit_tag 'Search', name: nil,class: 'btn btn-primary' %>
+<!--                    <button type="submit" class="btn btn-primary" data-disable-with="Go">-->
+<!--                      Go-->
+<!--                    </button>-->
+
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </form>-->
+            <%# end %>
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+
+<!--      <div>-->
+<!--        <span class="label label-primary"> Logged in as <%#= current_user.email %></span>-->
+
+        <%#= link_to 'My Articles', user_articles_path(current_user), class: 'btn btn-success btn-xs' %>
+        <%#= link_to 'Profile',current_user,class: 'btn btn-info btn-xs'%>
+        <%# if current_user.role == "admin" %>
+          <%#= link_to 'Admin Panel', users_path, class: 'btn btn-danger btn-xs' %>
+        <%#end %>
+        <%#= link_to 'Log Out', logout_path, class: 'btn btn-danger btn-xs' %>
+<!--        <br><br>-->
+
+        <%#= link_to new_user_article_path(current_user) ,class: 'btn btn-success btn-lg' do%>
+<!--          <i class="glyphicon glyphicon-plus"></i> Create Article-->
+        <%#end %>
+
+
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+
+<!--   header section-->
   <section id="section-services" class="section pad-bot30 bg-white">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <h1>My Blog</h1>
-          <h5><span class="label label-info">Logged in as <%= current_user.email %> </span></h5>
-          <!--<img class="navbar-logo" src="img/logo.png" alt="Vector Logo">-->
+        <div class="col-md-2">
+          <a href="<%=root_path %>">
+            <h1>My Blog</h1></a>
+          <h6><span class="label label-info">Logged in as <%= current_user.email %> </span></h6>
+<!--          <img class="navbar-logo" src="img/logo.png" alt="Vector Logo" style="width: 35%">-->
         </div>
-
-        <div class="col-md-6">
+        <div class="col-md-10">
           <div class="row">
-            <%= form_tag(root_url, method: :get, html: {class: 'form-search'}) do %>
+            <div class="col-md-8">
+<!--              <a class="btn btn-default" href="Logged in as admin@gamil.com"> Logged in as admin@gamil.com </a>-->
+              <a class="btn btn-default" href="<%=new_user_article_path(current_user) %>"> + Create Article</a>
+              <a class="btn btn-default" href="<%=user_articles_path(current_user) %>"> My Articles</a>
+              <a class="btn btn-default" href="<%=user_path(current_user) %>"> Profile </a>
+              <% if current_user.role == "admin" %>
+              <a class="btn btn-default" href="<%=users_path %>"> Admin Panel </a>
+                <%end %>
+              <a class="btn btn-default" href="<%=logout_path %>"> Log Out </a>
+            </div>
+<!--            Search Begin-->
+            <div class="col-md-4">
+              <%= form_tag(root_url, method: :get, html: {class: 'form-search'}) do %>
               <form class="form-search">
 
-                <div class="col-md-6"></div>
-                <div class="col-md-6">
+                <div class="form-group">
+                  <%= text_field_tag :search, params[:search],class: 'form-control', placeholder: 'Search Articles', value: '' %>
+                  <%#= submit_tag name: nil,class: 'btn btn-primary' %>
+                  <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-search"></i>
+                  </button>
 
-
-                  <div class="form-group">
-                    <%= text_field_tag :search, params[:search],class: 'form-control', placeholder: 'Search Articles', value: '' %>
-                    <%#= submit_tag 'Search', name: nil,class: 'btn btn-primary' %>
-                    <button type="submit" class="btn btn-primary" data-disable-with="Go">
-                      Go
-                    </button>
-
-                  </div>
                 </div>
               </form>
-            <% end %>
+                <%end %>
+            </div>
+<!--            Search End-->
           </div>
         </div>
-      </div>
-
-
-      <div>
-<!--        <span class="label label-primary"> Logged in as <%#= current_user.email %></span>-->
-
-        <%= link_to 'My Articles', user_articles_path(current_user), class: 'btn btn-success btn-xs' %>
-        <%= link_to 'Profile',current_user,class: 'btn btn-info btn-xs'%>
-        <% if current_user.role == "admin" %>
-          <%= link_to 'Admin Panel', users_path, class: 'btn btn-danger btn-xs' %>
-        <%end %>
-        <%= link_to 'Log Out', logout_path, class: 'btn btn-danger btn-xs' %>
-        <br><br>
-
-        <%= link_to new_user_article_path(current_user) ,class: 'btn btn-success btn-lg' do%>
-          <i class="glyphicon glyphicon-plus"></i> Create Article
-        <%end %>
-
-
+<!--        <div class="col-md-12">-->
+<!--          <a href="create_article.html" class="btn btn-success">+ Create Article</a>-->
+<!--        </div>-->
       </div>
     </div>
   </section>
+
   <section id="section-works" class="section appear clearfix">
     <div class="container">
       <%@articles = Article.search(params[:search]) %>
@@ -66,14 +115,7 @@
           <div class="row">
             <div class="portfolio-items isotopeWrapper clearfix" id="3">
 
-             <%#  if params[:search]%>
-             <%#  @articles =   Article.where("lower(:title) LIKE :title",title: "%#{search.downcase}%")%>
-              <%# else%>
-              <%# @articles = Article.all%>
-              <%# end%>
 
-
-              <%# @articles = Article.all%>
 
               <% @articles.each do |article| %>
 
