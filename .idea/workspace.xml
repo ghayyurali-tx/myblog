@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8d926bc-ab1d-45e8-8f97-75f62639b161" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/views/articles/_indexnew.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/_indexnew.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/articles/_show_article.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/_show_article.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/welcome/_welcomenew.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/welcome/_welcomenew.html.erb" afterDir="false" />
-    </list>
+    <list default="true" id="b8d926bc-ab1d-45e8-8f97-75f62639b161" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/log/" />
@@ -42,26 +38,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/articles/_indexnew.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="130" column="48" selection-start-line="130" selection-start-column="48" selection-end-line="130" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/welcome/_welcomenew.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="125" column="167" selection-start-line="125" selection-start-column="167" selection-end-line="125" selection-end-column="167" />
+            <state relative-caret-position="425">
+              <caret line="139" column="54" lean-forward="true" selection-start-line="139" selection-start-column="54" selection-end-line="139" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/welcome/_welcomenew.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="124" column="54" lean-forward="true" selection-start-line="124" selection-start-column="54" selection-end-line="124" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/articles/_show_article.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="81" column="36" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+              <caret line="81" column="37" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#4;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
               </folding>
@@ -181,8 +177,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/articles_index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/show_article.html.erb" />
         <option value="$PROJECT_DIR$/app/views/articles/_show_article.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/articles/_indexnew.html.erb" />
         <option value="$PROJECT_DIR$/app/views/welcome/_welcomenew.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/articles/_indexnew.html.erb" />
       </list>
     </option>
   </component>
@@ -513,7 +509,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="454299000" />
+    <option name="totallyTimeSpent" value="454540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
@@ -775,27 +771,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/_show_article.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="81" column="37" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#4;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/articles/_indexnew.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="130" column="48" selection-start-line="130" selection-start-column="48" selection-end-line="130" selection-end-column="48" />
+        <state relative-caret-position="425">
+          <caret line="139" column="54" lean-forward="true" selection-start-line="139" selection-start-column="54" selection-end-line="139" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/welcome/_welcomenew.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="125" column="167" selection-start-line="125" selection-start-column="167" selection-end-line="125" selection-end-column="167" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/_show_article.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="81" column="36" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#4;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="124" column="54" lean-forward="true" selection-start-line="124" selection-start-column="54" selection-end-line="124" selection-end-column="54" />
         </state>
       </provider>
     </entry>
