@@ -128,7 +128,7 @@
               <article class="col-md-4">
                 <div class="imgBlock">
                   <div class="img-container">
-                    <% if article.image.present? %>
+                    <% if article.image.attached? %>
 
                       <%= image_tag article.image.variant(combine_options: { resize: "720x550^", extent: "720x550^", auto_orient: true, gravity: "center"}).processed, alt: 'Image', class: 'img-responsive '%>
                       <%else %>

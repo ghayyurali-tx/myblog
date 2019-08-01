@@ -79,7 +79,7 @@
       </div>
       <div class="col-md-12">
         <br>
-        <% if @article.image.present? %>
+        <% if @article.image.attached? %>
 
           <%= image_tag @article.image, alt: 'Back Ground image', class: 'bc-image'%>
         <%else %>
