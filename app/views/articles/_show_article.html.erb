@@ -62,8 +62,17 @@
           <div class="col-md-2">
             <p>
               <%=@article.user.name %><span>&nbsp&nbsp</span>
-              <a class="btn btn-default btn-follow btn-xs" href="#"> Follow </a>
+              <%@user = User.find(params[:user_id]) %>
+              <% if @article.user == current_user || current_user.role == "admin" %>
+                <a class="btn btn-default btn-follow btn-xs" href="<%=edit_user_article_path(@article.user_id, @article) %>"> Edit Article </a>
+                <%#= link_to 'Edit Article', edit_user_article_path(@article.user_id, @article),class: 'btn btn-warning btn-xs'%>
+              <%else %>
+                <a class="btn btn-default btn-follow btn-xs" href="#"> Follow </a>
+              <%end %>
+
+
             </p>
+
             <p>Last update:<span>&nbsp</span> <%= @article.updated_at.strftime("%b %d, %Y") %></p>
           </div>
         </div>
@@ -155,14 +164,26 @@
             </div>
           </div>
             <%end %>
+          <%= form_with(model: [ current_user,@article, @article.comments.build ], local: true) do |form| %>
           <div class="col-md-12">
+
             <form>
               <br>
-              <textarea class="form-control col-md-12"></textarea>
-              <button class="btn btn-success" style="margin-top: 2%; float: right;">Submit</button>
+              <p>
+                <%= form.text_field :commenter, value: current_user.name, class: 'hide' %></p>
+
+              <p>
+                <%= form.text_area :body, class:'form-control col-md-12'%><br></p>
+              <p>
+
+                <%= form.submit 'Submit', class: 'btn btn-success btn-sm', style: 'margin-top: 2%; float: left;' %>
+              </p>
+<!--              <textarea class="form-control col-md-12"></textarea>-->
+<!--              <button class="btn btn-success" style="margin-top: 2%; float: right;">Submit</button>-->
             </form>
           </div>
         </div>
+            <%end %>
       </div>
     </div>
   </div>
