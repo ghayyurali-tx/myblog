@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8d926bc-ab1d-45e8-8f97-75f62639b161" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/views/articles/_indexnew.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/_indexnew.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/articles_index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/articles_index.html.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -86,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/articles_index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+            <state relative-caret-position="287">
+              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -496,12 +495,12 @@
       <workItem from="1564420446812" duration="599000" />
       <workItem from="1564564489270" duration="24146000" />
       <workItem from="1564595633747" duration="33000" />
-      <workItem from="1564650532704" duration="1693000" />
+      <workItem from="1564650532704" duration="1980000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="451318000" />
+    <option name="totallyTimeSpent" value="451605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
@@ -779,8 +778,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/articles_index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        <state relative-caret-position="287">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
         </state>
       </provider>
     </entry>

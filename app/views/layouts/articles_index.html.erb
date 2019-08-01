@@ -11,14 +11,23 @@
   <%= stylesheet_link_tag "bootstrap.css" %>
   <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700"/>
 
-  <%= stylesheet_link_tag "style.css", media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= stylesheet_link_tag "default.css", media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- skin -->
+  <link rel="stylesheet" href="/skin/default.css">
+
+  <%#= stylesheet_link_tag "style.css", media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%#= stylesheet_link_tag "default.css", media: 'all', 'data-turbolinks-track': 'reload' %>
+<!--  <link rel="stylesheet" href="/css/bootstrap.css">-->
+  <%#= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag "rails-ujs", 'data-turbolinks-track': 'reload' %>
+  <%= csrf_meta_tag %>
 </head>
 
 <body>
 <%= yield %>
+
+<a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>
 <%= javascript_include_tag 'jquery.js', 'data-turbolinks-track': 'reload'  %>
 <%= javascript_include_tag 'main.js', 'data-turbolinks-track': 'reload'  %>
 </body>
