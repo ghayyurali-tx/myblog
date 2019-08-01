@@ -122,11 +122,11 @@
                 <article class="col-md-4">
                   <div class="imgBlock">
                     <div class="img-container">
-                      <% if article.image.attached? %>
-                        <%= image_tag article.image.variant(combine_options: { resize: "720x550^", extent: "720x550^", auto_orient: true, gravity: "center"}).processed, alt: 'Image', class: 'img-responsive' %>
-                      <%else %>
+                      <%# if article.image.attached? %>
+                        <%#= image_tag article.image.variant(combine_options: { resize: "720x550^", extent: "720x550^", auto_orient: true, gravity: "center"}).processed, alt: 'Image', class: 'img-responsive' %>
+                      <%#else %>
                         <%= image_tag("portfolio/img1.jpg") %>
-                      <%end %>
+                      <%#end %>
                       <div class="img-overlay">
                         <p class="img-btn">
                           <span class="date"><%= article.updated_at.strftime("%b %d, %Y") %></span>
@@ -145,7 +145,7 @@
                                         data: { confirm: 'Are you sure?' }, class: 'url-text' %>
                           <%end %>
                           <h2 class="h2-text">
-                            <a href="<%= user_article_path(current_user,article)%>"><%=article.title %></a>
+                            <a href="<%= user_article_path(current_user,article)%>"><%=truncate(article.title, length: 65) %></a>
                           </h2>
                           </p>
                           </div>

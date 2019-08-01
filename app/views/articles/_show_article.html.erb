@@ -79,17 +79,20 @@
       </div>
       <div class="col-md-12">
         <br>
-        <% if @article.image.attached? %>
+        <%# if @article.image.attached? %>
 
-          <%= image_tag @article.image, alt: 'Back Ground image', class: 'bc-image'%>
-        <%else %>
+          <%#= image_tag @article.image, alt: 'Back Ground image', class: 'bc-image'%>
+        <%#else %>
           <%= image_tag("portfolio/img1.jpg", alt: 'Back Ground image', class: 'bc-image') %>
-        <%end %>
+        <%#end %>
 <!--        <img src="/img/bg-4.jpg" alt="Back Ground image" class="bc-image">-->
       </div>
       <div class="col-md-12">
         <p class="blog-para">
-       <%=@article.text %>
+
+          <%= sanitize @article.text, tags: %w(strong em a b font br p table tbody tr td ol li u img iframe span blockquote pre h1 h2 h3 h4 h5 h6 div strike hr),
+                       attributes: %w(href face class src style ta rget frameborder width height color) %>
+
         </p>
         <br>
       </div>
@@ -196,4 +199,10 @@
     </div>
   </div>
 </section>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#code_preview0').summernote({height: 200});
+    });
+</script>
 
