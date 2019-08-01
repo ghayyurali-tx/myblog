@@ -79,12 +79,12 @@
       </div>
       <div class="col-md-12">
         <br>
-        <%# if @article.image.attached? %>
+        <% if @article.image.present? %>
 
-          <%#= image_tag @article.image, alt: 'Back Ground image', class: 'bc-image'%>
-        <%#else %>
+          <%= image_tag @article.image, alt: 'Back Ground image', class: 'bc-image'%>
+        <%else %>
           <%= image_tag("portfolio/img1.jpg", alt: 'Back Ground image', class: 'bc-image') %>
-        <%#end %>
+        <%end %>
 <!--        <img src="/img/bg-4.jpg" alt="Back Ground image" class="bc-image">-->
       </div>
       <div class="col-md-12">
