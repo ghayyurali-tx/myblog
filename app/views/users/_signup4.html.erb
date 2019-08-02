@@ -49,6 +49,17 @@
               <%=form.password_field :password_confirmation, class: 'form-control m-input',placeholder:"Confirm Password", required: '' %>
 <!--              <input class="form-control m-input m-login__form-input--last" type="password" placeholder="Confirm Password" name="user[password_confirmation]" required="">-->
             </div>
+            <div class="form-group m-form__group">
+              <div class="m-login__form-action">
+<!--              <div class="m-login__form-action">-->
+<!--              <br>&nbsp&nbsp-->
+
+              <%=form.file_field :avatar, onchange: 'validateFiles(this);',data: { max_file_size: 5.megabytes },class: "btn m-btn m-btn--pill m-btn--custom m-btn--air m-login__btn m-login__btn--primary" ,required: true %>
+              <!--              <input class="form-control m-input" type="text" placeholder="Email" name="user[email]" required="">-->
+              </div>
+            </div>
+
+<!--            </div>-->
             <!--<div class="row form-group m-form__group m-login__form-sub">-->
             <!--<div class="col m&#45;&#45;align-left">-->
             <!--<label class="m-checkbox m-checkbox&#45;&#45;light">-->

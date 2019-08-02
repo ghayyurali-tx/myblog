@@ -1,5 +1,10 @@
 <body  class="m--skin- m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default"  >
 <!-- begin:: Page -->
+
+<!--<script type="text/javascript">-->
+<!--    var $jk = jQuery.noConflict();-->
+<!--</script>-->
+
 <div class="m-grid m-grid--hor m-grid--root m-page">
   <div class="m-grid__item m-grid__item--fluid m-grid m-grid--hor m-login m-login--signin m-login--2 m-login-2--skin-1" id="m_login" style="background-image: url(assets/app/media/img//bg/bg-7.jpg);">
     <div class="m-grid__item m-grid__item--fluid m-login__wrapper">
@@ -29,8 +34,8 @@
             </div>
 
             <div class="form-group m-form__group">
-              <%=form.text_field :email, class: 'form-control m-input',placeholder:"Email"  %>
-              <!--              <input class="form-control m-input" type="text" placeholder="Email" name="user[email]" required="">-->
+              <%=form.text_field :email, class: 'form-control m-input',placeholder:"Email" %>
+<!--                            <input class="form-control m-input" type="text" placeholder="Email" name="user[email]" required="">-->
             </div>
             <div class="form-group m-form__group">
               <%=form.password_field :password, class: 'form-control m-input',placeholder:"Password" %>
@@ -81,4 +86,12 @@
     </div>
   </div>
 </div>
+
+<!--<script type="text/javascript">-->
+<!--    $(document).ready(function () {-->
+<!--        $("#sign_in_form").validate();-->
+<!--    });-->
+<!--</script>-->
+
+
 </body>

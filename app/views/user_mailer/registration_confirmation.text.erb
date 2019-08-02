@@ -1,5 +1,8 @@
 Hi <%= @user.name %>,
 
 Thanks for registering! To confirm your registration click the URL below.
-
+<%if Rails.env.production? %>
 <%=confirm_email_url(@user.confirm_token, host: "https://arcane-shore-87345.herokuapp.com")%>
+<%else %>
+  <%=confirm_email_url(@user.confirm_token, host: "http://localhost:3000")%>
+<%end %>

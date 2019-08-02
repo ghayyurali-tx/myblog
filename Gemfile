@@ -8,8 +8,10 @@ gem 'mini_magick'
 gem 'image_processing'
 gem 'active_storage_validations'
 gem 'bootsnap'
+gem 'rails-erd' ,group: :development
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.2.0'
+gem 'jquery-validation-rails'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

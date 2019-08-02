@@ -57,7 +57,12 @@
       <div class="col-md-12">
         <div class="row">
           <div class="col-md-1">
-            <img src="/img/user.jpg" alt="User image" class="user_image">
+<!--            <img src="/img/user.jpg" alt="User image" class="user_image">-->
+            <% if @article.user.avatar.attached? %>
+              <%= image_tag @article.user.avatar, alt: "User image", class: "user_image"%>
+            <%else %>
+              <img src="/img/user.jpg" alt="User image" class="user_image">
+            <%end %>
           </div>
           <div class="col-md-2">
             <p>
@@ -79,12 +84,12 @@
       </div>
       <div class="col-md-12">
         <br>
-        <%# if @article.image.attached? %>
-
-          <%#= image_tag @article.image, alt: 'Back Ground image', class: 'bc-image'%>
-        <%#else %>
-          <%= image_tag("portfolio/img1.jpg", alt: 'Back Ground image', class: 'bc-image') %>
-        <%#end %>
+        <% if @article.image.attached? %>
+          <%= image_tag @article.image, alt: 'Back Ground image', class: 'bc-image'%>
+        <%else %>
+          <%#= image_tag("portfolio/img1.jpg", alt: 'Back Ground image', class: 'bc-image') %>
+          <img src="/img/bg-4.jpg" alt="Back Ground image" class="bc-image">
+        <%end %>
 <!--        <img src="/img/bg-4.jpg" alt="Back Ground image" class="bc-image">-->
       </div>
       <div class="col-md-12">
@@ -125,7 +130,12 @@
       <div class="col-md-12">
         <div class="row">
           <div class="col-md-2">
-            <img src="/img/user.jpg" alt="User image" class="user_image">
+<!--            <img src="/img/user.jpg" alt="User image" class="user_image">-->
+            <% if @article.user.avatar.attached? %>
+              <%= image_tag @article.user.avatar, alt: "User image", class: "user_image"%>
+            <%else %>
+              <img src="/img/user.jpg" alt="User image" class="user_image">
+            <%end %>
           </div>
           <div class="col-md-8">
             <h4>Written by</h4>
@@ -146,13 +156,21 @@
         <h2>Comments</h2>
         <div class="row">
           <% @article.comments.each do |comment| %>
+            <% @user= comment.user%>
+            <%# @user = User.find(params[id]) %>
           <div class="col-md-12">
 
             <div class="row">
               <br>
               <div class="col-md-1">
 
-                <img src="/img/user.jpg" alt="User image" class="comment_image">
+                <%#debugger %>
+<!--                <img src="/img/user.jpg" alt="User image" class="comment_image">-->
+                <% if @user.avatar.attached? %>
+                  <%= image_tag @user.avatar, alt: "User image", class: "comment_image"%>
+                <%else %>
+                  <img src="/img/user.jpg" alt="User image" class="comment_image">
+                <%end %>
               </div>
               <div class="col-md-8">
                 <p>
@@ -200,9 +218,9 @@
   </div>
 </section>
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#code_preview0').summernote({height: 200});
-    });
-</script>
+<!--<script type="text/javascript">-->
+<!--    $(document).ready(function() {-->
+<!--        $('#code_preview0').summernote({height: 200});-->
+<!--    });-->
+<!--</script>-->
 

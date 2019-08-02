@@ -59,7 +59,7 @@
     </div>
     <div class="row">
       <div class="col-lg-12">
-        <%= form_with scope: :article, url: user_articles_path, local: true do |form| %>
+        <%= form_with scope: :article, url: user_articles_path,id: 'create_article' ,local: true do |form| %>
 
           <div class="form-group">
 
@@ -109,3 +109,9 @@
     </div>
   </div>
 </section>
+
+<!--<script type="text/javascript">-->
+<!--    $(document).ready(function () {-->
+<!--        $("#create_article").validate();-->
+<!--    });-->
+</script>

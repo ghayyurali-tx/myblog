@@ -1,7 +1,7 @@
 function validateFiles(inputFile) {
     var maxExceededMessage = "This file exceeds the maximum allowed file size (5 MB)";
-    var extErrorMessage = "Only image file with extension: .jpg, .jpeg, .gif or .png is allowed";
-    var allowedExtension = ["jpg", "jpeg", "gif", "png"];
+    var extErrorMessage = "Only image file with extension: .jpg, .jpeg or .png is allowed";
+    var allowedExtension = ["jpg", "jpeg", "png"];
 
     var extName;
     var maxFileSize = $(inputFile).data('max-file-size');

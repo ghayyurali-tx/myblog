@@ -1,5 +1,56 @@
-<div class="row">
-<div class = "container">
+<section id="section-services" class="section pad-bot30 bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <a href="<%=root_path %>">
+          <h1>My Blog</h1></a>
+        <h6><span class="label label-info">Logged in as <%= current_user.email %> </span></h6>
+        <!--          <img class="navbar-logo" src="img/logo.png" alt="Vector Logo" style="width: 35%">-->
+      </div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-md-8">
+            <!--              <a class="btn btn-default" href="Logged in as admin@gamil.com"> Logged in as admin@gamil.com </a>-->
+            <a class="btn btn-default" href="<%=new_user_article_path(current_user) %>"> + Create Article</a>
+            <!--              <a class="btn btn-default" href="<%#=edit_user_path(@user) %>"> Edit Profile </a>-->
+            <a class="btn btn-default" href="<%=root_path %>"> Home</a>
+            <a class="btn btn-default" href="<%=user_articles_path(@user) %>"> My Articles</a>
+            <% if current_user.role == "admin" %>
+              <a class="btn btn-default" href="<%=users_path %>"> Admin Panel </a>
+            <%end %>
+            <a class="btn btn-default" href="<%=logout_path %>"> Log Out </a>
+          </div>
+          <!--            Search Begin-->
+          <div class="col-md-4">
+            <%= form_tag(root_url, method: :get, html: {class: 'form-search'}) do %>
+              <form class="form-search">
+
+                <div class="form-group">
+                  <%= text_field_tag :search, params[:search],class: 'form-control', placeholder: 'Search Articles', value: '' %>
+                  <%#= submit_tag name: nil,class: 'btn btn-primary' %>
+                  <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-search"></i>
+                  </button>
+
+                </div>
+              </form>
+            <%end %>
+          </div>
+          <!--            Search End-->
+        </div>
+      </div>
+      <!--        <div class="col-md-12">-->
+      <!--          <a href="create_article.html" class="btn btn-success">+ Create Article</a>-->
+      <!--        </div>-->
+    </div>
+  </div>
+</section>
+
+
+<section id="section-works" class="section appear clearfix">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
 
 <%= form_with model: @user, local: true do |form| %>
 
@@ -33,11 +84,13 @@
     <p>
       <%= form.password_field :password_confirmation %></p>
 
-
+    <%= form.label 'Profile Photo' %><p>
+  <%= form.file_field :avatar, onchange: 'validateFiles(this);',data: { max_file_size: 5.megabytes } %>
+</p>
 
 <p>
-  <%= form.submit 'Update', class: "btn btn-success btn-xs" %>
-    <%= link_to 'Cancel',user_path, class: 'btn btn-danger btn-xs' %>
+  <%= form.submit 'Update', class: "btn btn-success " %>
+    <%= link_to 'Cancel',user_path, class: 'btn btn-danger' %>
 
 </p>
 
@@ -46,4 +99,5 @@
   </div>
     </div>
 </div>
-</div>
+
+</section>

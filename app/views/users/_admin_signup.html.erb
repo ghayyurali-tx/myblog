@@ -334,6 +334,28 @@
                         <!--                        <input type="password" class="form-control m-input" name="user[password_confirmation]" placeholder="Enter your Confirm Password" >-->
                       </div>
                     </div>
+
+                    <div class="form-group m-form__group row">
+                      <label class="col-form-label col-lg-3 col-sm-12">
+                        User Type *
+                      </label>
+                      <div class="col-lg-4 col-md-9 col-sm-12">
+                        <%= form.select(:role, User.roles.keys.map {|role| [role.titleize,role]}) %>
+                        <!--                        <input type="password" class="form-control m-input" name="user[password_confirmation]" placeholder="Enter your Confirm Password" >-->
+                      </div>
+                    </div>
+
+                    <div class="form-group m-form__group row">
+                      <label class="col-form-label col-lg-3 col-sm-12">
+                        Avatar *
+                      </label>
+                      <div class="col-lg-4 col-md-9 col-sm-12">
+                        <%=javascript_include_tag 'image.change' %>
+                        <%= form.file_field :avatar, onchange: 'validateFiles(this);',data: { max_file_size: 5.megabytes }, required: true %>
+                      <br>
+                      </div>
+                    </div>
+
                   </div>
                   <div class="m-portlet__foot m-portlet__foot--fit">
                     <div class="m-form__actions m-form__actions">
