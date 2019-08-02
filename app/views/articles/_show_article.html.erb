@@ -58,11 +58,11 @@
         <div class="row">
           <div class="col-md-1">
 <!--            <img src="/img/user.jpg" alt="User image" class="user_image">-->
-            <% if @article.user.avatar.attached? %>
-              <%= image_tag @article.user.avatar, alt: "User image", class: "user_image"%>
-            <%else %>
+            <%# if @article.user.avatar.attached? %>
+              <%#= image_tag @article.user.avatar, alt: "User image", class: "user_image"%>
+            <%#else %>
               <img src="/img/user.jpg" alt="User image" class="user_image">
-            <%end %>
+            <%#end %>
           </div>
           <div class="col-md-2">
             <p>
@@ -84,12 +84,12 @@
       </div>
       <div class="col-md-12">
         <br>
-        <% if @article.image.attached? %>
-          <%= image_tag @article.image, alt: 'Back Ground image', class: 'bc-image'%>
-        <%else %>
+        <%# if @article.image.attached? %>
+          <%#= image_tag @article.image, alt: 'Back Ground image', class: 'bc-image'%>
+        <%#else %>
           <%#= image_tag("portfolio/img1.jpg", alt: 'Back Ground image', class: 'bc-image') %>
           <img src="/img/bg-4.jpg" alt="Back Ground image" class="bc-image">
-        <%end %>
+        <%#end %>
 <!--        <img src="/img/bg-4.jpg" alt="Back Ground image" class="bc-image">-->
       </div>
       <div class="col-md-12">
@@ -131,11 +131,11 @@
         <div class="row">
           <div class="col-md-2">
 <!--            <img src="/img/user.jpg" alt="User image" class="user_image">-->
-            <% if @article.user.avatar.attached? %>
-              <%= image_tag @article.user.avatar, alt: "User image", class: "user_image"%>
-            <%else %>
+            <%# if @article.user.avatar.attached? %>
+              <%#= image_tag @article.user.avatar, alt: "User image", class: "user_image"%>
+            <%#else %>
               <img src="/img/user.jpg" alt="User image" class="user_image">
-            <%end %>
+            <%#end %>
           </div>
           <div class="col-md-8">
             <h4>Written by</h4>
@@ -166,11 +166,11 @@
 
                 <%#debugger %>
 <!--                <img src="/img/user.jpg" alt="User image" class="comment_image">-->
-                <% if @user.avatar.attached? %>
-                  <%= image_tag @user.avatar, alt: "User image", class: "comment_image"%>
-                <%else %>
+                <%# if @user.avatar.attached? %>
+                  <%#= image_tag @user.avatar, alt: "User image", class: "comment_image"%>
+                <%#else %>
                   <img src="/img/user.jpg" alt="User image" class="comment_image">
-                <%end %>
+                <%#end %>
               </div>
               <div class="col-md-8">
                 <p>
