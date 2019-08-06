@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="/css/style.css">
   <!-- skin -->
   <!--<link rel="stylesheet" href="skin/default.css">-->
-
+  <%= javascript_include_tag "rails-ujs", 'data-turbolinks-track': 'reload' %>
 </head>
 
 <body>
@@ -26,8 +26,8 @@
         $('#code_preview0').summernote({height: 200});
     });
 </script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.6.6/summernote.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" data-turbolinks-track = 'reload'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.6.6/summernote.min.js" data-turbolinks-track = 'reload'></script>
 <%#= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </body>
 </html>

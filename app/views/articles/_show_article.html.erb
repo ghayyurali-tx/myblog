@@ -65,18 +65,43 @@
             <%end %>
           </div>
           <div class="col-md-2">
-            <p>
+
               <%=@article.user.name %><span>&nbsp&nbsp</span>
               <%@user = User.find(params[:user_id]) %>
               <% if @article.user == current_user || current_user.role == "admin" %>
                 <a class="btn btn-default btn-follow btn-xs" href="<%=edit_user_article_path(@article.user_id, @article) %>"> Edit Article </a>
                 <%#= link_to 'Edit Article', edit_user_article_path(@article.user_id, @article),class: 'btn btn-warning btn-xs'%>
               <%else %>
-                <a class="btn btn-default btn-follow btn-xs" href="#"> Follow </a>
-              <%end %>
+
+<!--                <a class="btn btn-default btn-follow btn-xs" data-method="post" href="<%#=relationship_path(@user) %>"> Follow </a>-->
+            <% pre_follow = current_user.active_relationships.find_by(followed_id: @article.user_id) %>
+            <% if !pre_follow %>
+                  <%= form_for(current_user.active_relationships.build, local: true) do |f| %>
+                    <%= hidden_field_tag :followed_id, @article.user.id %>
+                    <%= f.submit "Follow", class: "btn btn-default btn-follow btn-xs" %>
+                <%end %>
+                <%else %>
+                  <%= form_for(current_user.active_relationships.find_by(followed_id: @article.user_id), html: { method: :delete }, local: true) do |f| %>
+                    <%= f.submit "Unfollow", class: "btn btn-default btn-follow btn-xs" %>
+                    <%end %>
+                <%end %>
+                <%end %>
 
 
-            </p>
+
+
+
+                <%# if !current_user.following?(@article.user_id) %>
+                    <%#= form_for(current_user.active_relationships.build, remote: true) do |f| %>
+<!--                      <div><%#= hidden_field_tag :followed_id, @article.user.id %></div>-->
+                      <%#= f.submit "Follow", class: "btn btn-default btn-follow" %>
+                    <%# end %>
+
+                    <%#end %>
+                    <%#end %>
+
+
+
 
             <p>Last update:<span>&nbsp</span> <%= @article.updated_at.strftime("%b %d, %Y") %></p>
           </div>
@@ -144,9 +169,45 @@
 <!--              Writes about relationships and pop psychology for The New York Times, Vice, and more. Author of “Clearly, I Didn’t Think This Through.” Lives in Philly.-->
 <!--            </p>-->
           </div>
-          <div class="col-md-2">
-            <a class="btn btn-default btn-follow" href="#"> Follow </a>
+<!--          <div id="follow_form">-->
+            <div class="col-md-2">
+            <%# if current_user.following?(@article.user_id) %>
+<!--              <a class="btn btn-default btn-follow" href="#"> Follow </a>-->
+
+
+              <!--                <a class="btn btn-default btn-follow btn-xs" data-method="post" href="<%#=relationship_path(@user) %>"> Follow </a>-->
+              <% if @article.user == current_user %>
+                <%else %>
+                <% pre_follow = current_user.active_relationships.find_by(followed_id: @article.user_id) %>
+                <% if !pre_follow %>
+                  <%= form_for(current_user.active_relationships.build, local: true) do |f| %>
+                    <%= hidden_field_tag :followed_id, @article.user.id %>
+                    <%= f.submit "Follow", class: "btn btn-default btn-follow" %>
+                  <%end %>
+                <%else %>
+                  <%= form_for(current_user.active_relationships.find_by(followed_id: @article.user_id), html: { method: :delete }, local: true) do |f| %>
+                    <%= f.submit "Unfollow", class: "btn btn-default btn-follow" %>
+                  <%end %>
+                <%end %>
+                <%end %>
+
+
+                <%#= form_for(current_user.active_relationships.build, remote: true) do |f| %>
+<!--                  <div><%#= hidden_field_tag :followed_id, @user.id %></div>-->
+                  <%#= f.submit "Follow", class: "btn btn-default btn-follow" %>
+                <%# end %>
+            <%# else %>
+<!--              <a class="btn btn-default btn-follow" href="#"> Unfollow </a>-->
+
+                <%#= form_for(current_user.active_relationships.find_by(followed_id: @user.id), html: { method: :delete }, remote: true) do |f| %>
+                  <%#= f.submit "Unfollow", class: "btn btn-default btn-follow" %>
+                <%# end %>
+            <%# end %>
+<!--          </div>-->
           </div>
+<!--          <div class="col-md-2">-->
+<!--            <a class="btn btn-default btn-follow" href="#"> Follow </a>-->
+<!--          </div>-->
         </div>
       </div>
       <div class="col-md-12">

@@ -10,6 +10,8 @@ Rails.application.routes.draw do
     resources :likes
   end
 
+  resources :relationships,       only: [:create, :destroy]
+
   resources :sessions, only: [:new, :create, :destroy]
 
   get '/:token/confirm_email/', :to => "users#confirm_email", as: 'confirm_email'
