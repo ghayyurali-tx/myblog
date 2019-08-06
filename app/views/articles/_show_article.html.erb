@@ -129,11 +129,12 @@
       <div class="col-md-12">
         <div class="row">
           <div class="col-md-10">
-            <a class="btn btn-default btn-follow" href="#"> Follow </a>
-            <a class="btn btn-default btn-follow" href="#"> Follow </a>
-            <a class="btn btn-default btn-follow" href="#"> Follow </a>
-            <a class="btn btn-default btn-follow" href="#"> Follow </a>
-            <a class="btn btn-default btn-follow" href="#"> Follow </a>
+<!--            <a class="btn btn-default btn-follow" href="#"> Follow </a>-->
+<!--            <a class="btn btn-default btn-follow" href="#"> Follow </a>-->
+<!--            <a class="btn btn-default btn-follow" href="#"> Follow </a>-->
+<!--            <a class="btn btn-default btn-follow" href="#"> Follow </a>-->
+<!--            <a class="btn btn-default btn-follow" href="#"> Follow </a>-->
+           Tags:&nbsp <%=raw tag_links(@article.all_tags)%>
           </div>
           <div class="col-md-2">
             <% pre_like = @article.likes.find { |like| like.user_id == current_user.id} %>

@@ -17,4 +17,7 @@
 //= require activestorage
 //= require jquery.validate.additional-methods
 //= require jquery.validate
-//= require_tree .
+//= //= require foundation
+require_tree .
+
+$(function(){ $(document).foundation(); });

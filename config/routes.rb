@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   get "logout", to: "sessions#destroy", as: "logout"
   get "edit", to: "users#edit", as: "edit"
   get "signup", to: "users#user_new", as: "signup"
+  get 'tags/:tag', to: 'welcome#index', as: "tag"
 
 
   root 'welcome#index'

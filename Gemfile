@@ -12,6 +12,8 @@ gem 'rails-erd' ,group: :development
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'jquery-validation-rails'
+gem 'foundation-rails'
+gem 'will_paginate'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

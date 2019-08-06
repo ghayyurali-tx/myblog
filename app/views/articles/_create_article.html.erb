@@ -80,6 +80,10 @@
 
           <!--          <input type="text" class="form-control" id="title" name="article[title]" placeholder="Enter your title here" required="">-->
         </div>
+          <%= form.label 'Tags' %>
+          <div class="form-group">
+          <%= form.text_field :all_tags,class: 'form-control', placeholder: "Tags separated with comma" %>
+          </div>
 
         <div class="row">
           <div class="col-lg-12">
@@ -96,7 +100,7 @@
         </div>
 
           <%= form.label 'Cover Photo' %><p>
-        <%= form.file_field :image, onchange: 'validateFiles(this);',data: { max_file_size: 5.megabytes } ,required: true %>
+        <%= form.file_field :image, onchange: 'validateFiles(this);',data: { max_file_size: 5.megabytes }, required: true %>
       </p>
 
           <p>
@@ -114,4 +118,4 @@
 <!--    $(document).ready(function () {-->
 <!--        $("#create_article").validate();-->
 <!--    });-->
-</script>
+<!--</script>-->

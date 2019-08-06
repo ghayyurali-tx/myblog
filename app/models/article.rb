@@ -11,11 +11,15 @@ class Article < ApplicationRecord
   has_many :comments, dependent: :destroy
   validates :title,
             length: { minimum: 5 }
+  validates :text, presence: true,
+            length: { minimum: 10 }
+
 
   validates :image, attached: true, content_type: ['image/png', 'image/jpg', 'image/jpeg'],
             dimension: { width: { min: 720, max: 1920 },
                          height: { min: 520, max: 1080 }, message: 'is not given between dimension. Please Provide image with dimensions between [720-1920]x[550-1080]' }
-
+  has_many :taggings
+  has_many :tags, through: :taggings
 
 def self.search(search)
   #debugger
@@ -32,6 +36,20 @@ if search
 #
 # end
 end
+
+  def all_tags=(names)
+    self.tags = names.split(",").map do |name|
+      Tag.where(name: name.strip).first_or_create!
+    end
+  end
+
+  def all_tags
+    self.tags.map(&:name).join(", ")
+  end
+
+  def self.tagged_with(name)
+    Tag.find_by_name!(name).articles
+  end
 
   # private
   #
