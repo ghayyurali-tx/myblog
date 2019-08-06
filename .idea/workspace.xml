@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8d926bc-ab1d-45e8-8f97-75f62639b161" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/registration_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/registration_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/articles/_show_article.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/_show_article.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/create_article.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/create_article.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/for_login.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/for_login.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erd.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/erd.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/QC/gy/QCgyq8X999BULCGgoMRyuS9x" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/R4/Tx/R4TxdoCtXHuYWPNSMCN3L8a4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/va/ri/variants/R4TxdoCtXHuYWPNSMCN3L8a4/074cdd6ea796ac2531dcd8781c43c9eb627a27f700061ce5d462234a100d9889" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/va/ri/variants/R4TxdoCtXHuYWPNSMCN3L8a4/248d8fa9be35d07aef562ad78c2fc44f0cdfafcb254fd3e6478fe0ce11a3ef78" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/va/ri/variants/R4TxdoCtXHuYWPNSMCN3L8a4/3f97746928039400eabe558975527d6caae4f021d638e9b0ac0aa9ecfa57494c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/va/ri/variants/R4TxdoCtXHuYWPNSMCN3L8a4/692141a78e820d4d9956ea526ace14408718b15821743bd471e286178ee1688f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/va/ri/variants/R4TxdoCtXHuYWPNSMCN3L8a4/8a3a998022d206f08e7db7afc28bb21e19596e46e34f90a55db9c3bb4d032e79" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/va/ri/variants/R4TxdoCtXHuYWPNSMCN3L8a4/8a967ecf4d40e0ba128fbd2c8f5f9104abd03fcd154cdcb1b4f8bb18cb22d9b9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/va/ri/variants/R4TxdoCtXHuYWPNSMCN3L8a4/91e0a0d3bb11a7ea88cbbe3ac1914b3c81db601dfcfb609779059e797169f166" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/va/ri/variants/R4TxdoCtXHuYWPNSMCN3L8a4/c26c43930ce6f8571ee7ccb10e49de066578fe374a8874cd680a841fe30c449b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/va/ri/variants/R4TxdoCtXHuYWPNSMCN3L8a4/c2d71b1a7a6edfff7762ea5465755ddbdeca8e9b7ad8e01c45092942712871a5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/va/ri/variants/R4TxdoCtXHuYWPNSMCN3L8a4/c4af209f4a25aeb72e1f531dfea5312271d60f753a91744553b259cc29245444" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/va/ri/variants/R4TxdoCtXHuYWPNSMCN3L8a4/fea9ea08199db35351b540c8162782e8c6dbe2d084e384325d8aa8d0453437d8" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -60,56 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/articles/_show_article.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1171">
+            <state relative-caret-position="1732">
               <caret line="191" column="21" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/show_article.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/for_login.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="607">
-              <caret line="39" column="111" selection-start-line="39" selection-start-column="111" selection-end-line="39" selection-end-column="111" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/create_article.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/articles_index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -142,7 +74,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/users_index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sessions/_newlogin.html.erb" />
@@ -192,6 +123,7 @@
         <option value="$PROJECT_DIR$/app/views/articles/_show_article.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/for_login.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/create_article.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/users_index.html.erb" />
       </list>
     </option>
   </component>
@@ -509,12 +441,12 @@
       <workItem from="1564595633747" duration="33000" />
       <workItem from="1564650532704" duration="2880000" />
       <workItem from="1564746439365" duration="19287000" />
-      <workItem from="1564993525367" duration="13269000" />
+      <workItem from="1564993525367" duration="14738000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="500812000" />
+    <option name="totallyTimeSpent" value="502281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
@@ -578,13 +510,6 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/users_index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="24" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -845,24 +770,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/_show_article.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/articles_index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1171">
-          <caret line="191" column="21" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
+        <state relative-caret-position="312">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/users_index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        <state relative-caret-position="423">
+          <caret line="48" column="135" selection-start-line="48" selection-start-column="135" selection-end-line="48" selection-end-column="135" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/show_article.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/create_article.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="78" />
+        <state relative-caret-position="440">
+          <caret line="30" column="74" lean-forward="true" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
         </state>
       </provider>
     </entry>
@@ -873,17 +798,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/articles_index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/show_article.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="78" />
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/create_article.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
+        <state relative-caret-position="255">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/_show_article.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1732">
+          <caret line="191" column="21" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
         </state>
       </provider>
     </entry>
