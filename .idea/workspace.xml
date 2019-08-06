@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8d926bc-ab1d-45e8-8f97-75f62639b161" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -55,9 +55,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -114,7 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/sessions/_newlogin.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/test.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/_new_index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/likes_controller.rb" />
@@ -152,7 +164,6 @@
         <option value="$PROJECT_DIR$/app/views/layouts/for_login.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/users_index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/tag.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/articles_helper.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/articles/_edit_article.html.erb" />
@@ -165,6 +176,8 @@
         <option value="$PROJECT_DIR$/app/views/welcome/_welcomenew.html.erb" />
         <option value="$PROJECT_DIR$/app/views/articles/_indexnew.html.erb" />
         <option value="$PROJECT_DIR$/app/views/articles/_show_article.html.erb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -494,12 +507,12 @@
       <workItem from="1564595633747" duration="33000" />
       <workItem from="1564650532704" duration="2880000" />
       <workItem from="1564746439365" duration="19287000" />
-      <workItem from="1564993525367" duration="28858000" />
+      <workItem from="1564993525367" duration="29473000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="516401000" />
+    <option name="totallyTimeSpent" value="517016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
@@ -776,13 +789,6 @@
     <entry file="file://$PROJECT_DIR$/app/models/tagging.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/articles_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -875,7 +881,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
