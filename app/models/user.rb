@@ -21,7 +21,7 @@ class User < ApplicationRecord
   end
 
   has_one_attached :avatar
-  validates :avatar, attached: true, content_type: ['image/png', 'image/jpg', 'image/jpeg'],
+  validates :avatar, content_type: ['image/png', 'image/jpg', 'image/jpeg'],
             dimension: { width: { min: 300, max: 1920 },
                          height: { min: 300, max: 1080 }, message: 'is not given between dimension. Please Provide image with dimensions between [300-1920]x[300-1080]' }
 

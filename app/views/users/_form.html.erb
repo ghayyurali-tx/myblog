@@ -83,6 +83,11 @@
     <label for="Password">Confirm Password</label>
     <p>
       <%= form.password_field :password_confirmation %></p>
+ <%if current_user.role == 'admin' %>
+          <label for="Password">User Type</label>
+          <p>
+            <%= form.select(:role, User.roles.keys.map {|role| [role.titleize,role]}) %></p>
+            <%end %>
 
     <%= form.label 'Profile Photo' %><p>
   <%= form.file_field :avatar, onchange: 'validateFiles(this);',data: { max_file_size: 5.megabytes } %>
