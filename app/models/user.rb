@@ -29,8 +29,8 @@ class User < ApplicationRecord
   validates :name, presence: true, format: { with: /\A[a-zA-Z\s]+\z/i, message: "can only be letters." }
   validates :email, presence: true, format: { with: URI::MailTo::EMAIL_REGEXP }
 
-  validates_confirmation_of :password, confirmation: { case_sensitive: true }
-  validates_length_of :password, minimum: 3
+  validates_confirmation_of :password, confirmation: { case_sensitive: true }, on: :create
+  validates_length_of :password, minimum: 3, on: :create
   validates_uniqueness_of :email , except: [:edit]
 
   def self.search(search)
