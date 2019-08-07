@@ -61,6 +61,16 @@ class User < ApplicationRecord
     end
   end
 
+  def update_with_token!
+    update_column(:token, generate_token)
+  end
+
+  private
+
+  def generate_token
+    SecureRandom.urlsafe_base64
+  end
+
   # Follows a user.
   def follow(other_user)
     following << other_user

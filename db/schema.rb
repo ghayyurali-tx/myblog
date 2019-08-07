@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_06_110446) do
+ActiveRecord::Schema.define(version: 2019_08_07_103403) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -98,6 +98,7 @@ ActiveRecord::Schema.define(version: 2019_08_06_110446) do
     t.boolean "email_confirmed", default: false
     t.string "confirm_token"
     t.integer "role"
+    t.string "token"
   end
 
 end
