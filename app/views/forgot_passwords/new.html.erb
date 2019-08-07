@@ -18,20 +18,26 @@
               Enter your email to reset your password:
             </div>
           </div>
+          <%=form_tag forgot_passwords_path, class:"m-login__form m-form" , local: true do |form| %>
+            <div class="form-group m-form__group">
+              <span class = "text text-danger" id=”alert”><%= alert %></span>
+            </div>
           <form class="m-login__form m-form" action="">
             <div class="form-group m-form__group">
-              <input class="form-control m-input" type="text" placeholder="Email" name="email" id="m_email" autocomplete="off">
+              <input class="form-control m-input" type="text" placeholder="Email" name="email" id="m_email" >
             </div>
             <div class="m-login__form-action">
-              <button id="m_login_forget_password_submit" class="btn m-btn m-btn--pill m-btn--custom m-btn--air m-login__btn m-login__btn--primary">
-                Request
-              </button>
+              <%= submit_tag 'Request', class: 'btn m-btn m-btn--pill m-btn--custom m-btn--air m-login__btn m-login__btn--primary' %>
+<!--              <button id="m_login_forget_password_submit" class="btn m-btn m-btn--pill m-btn--custom m-btn--air m-login__btn m-login__btn--primary" name="commit">-->
+<!--                Request-->
+<!--              </button>-->
               &nbsp;&nbsp;
               <a href="<%=root_url %>" class="btn m-btn m-btn--pill m-btn--custom m-btn--air m-login__btn">
                 Cancel
               </a>
             </div>
           </form>
+            <%end %>
         </div>
       </div>
     </div>
