@@ -108,7 +108,7 @@
   <section id="section-works" class="section appear clearfix">
     <div class="container">
       <% @user = User.find(params[:user_id])%>
-      <% @articles  = Article.paginate(:page => params[:page], :per_page=>6)%>
+      <% @articles  = @user.articles.paginate(:page => params[:page], :per_page=>6)%>
       <% if @user.articles.search(params[:search]).count == 0  %>
         <h2 class="text-danger">No Article Found</h2>
         <%=link_to 'Return to My Articles',  user_articles_path, class: 'btn btn-info' %>
