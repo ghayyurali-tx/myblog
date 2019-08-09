@@ -325,12 +325,11 @@
             <table class="table table-striped- table-bordered table-hover table-checkable">
               <thead>
               <tr>
-                <th>ID</th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Type</th>
-                <th>Token-Status</th>
-                <th>Token</th>
+                <th>Email Token</th>
+                <th>Password Token</th>
                 <th class="text-center">
                   Actions
                 </th>
@@ -340,7 +339,6 @@
               <% @user.search(params[:search]).each do |user| %>
               <tbody>
                 <tr>
-                  <td><%= user.id %></td>
                   <td><%= user.name %></td>
                   <td><%= user.email %></td>
                   <td><%= user.role %></td>
