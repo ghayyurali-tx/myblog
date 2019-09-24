@@ -65,7 +65,7 @@ class User < ApplicationRecord
     update_column(:token, generate_token)
   end
 
-  private
+  # private
 
   def generate_token
     SecureRandom.urlsafe_base64
