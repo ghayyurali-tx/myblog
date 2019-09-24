@@ -108,11 +108,13 @@
   <section id="section-works" class="section appear clearfix">
     <div class="container">
       <% @user = User.find(params[:user_id])%>
+      <% @articles  = @user.articles.paginate(:page => params[:page], :per_page=>6)%>
       <% if @user.articles.search(params[:search]).count == 0  %>
         <h2 class="text-danger">No Article Found</h2>
         <%=link_to 'Return to My Articles',  user_articles_path, class: 'btn btn-info' %>
       <%else %>
       <%end %>
+      <%= will_paginate @articles %>
       <div class="row">
 
         <div class="col-md-12">
@@ -123,17 +125,17 @@
 
               <%#articles = Article.search(params[:search]) %>
 
-              <% @user.articles.search(params[:search]).each do |article| %>
+              <% @user.articles.paginate(:page => params[:page], :per_page=>6).search(params[:search]).each do |article| %>
 
               <article class="col-md-4">
                 <div class="imgBlock">
                   <div class="img-container">
-                    <% if article.image.attached? %>
+                    <%# if article.image.attached? %>
 
-                      <%= image_tag article.image.variant(combine_options: { resize: "720x550^", extent: "720x550^", auto_orient: true, gravity: "center"}).processed, alt: 'Image', class: 'img-responsive '%>
-                      <%else %>
+                      <%#= image_tag article.image.variant(combine_options: { resize: "720x550^", extent: "720x550^", auto_orient: true, gravity: "center"}).processed, alt: 'Image', class: 'img-responsive '%>
+                      <%#else %>
                       <%= image_tag("portfolio/img1.jpg") %>
-                      <%end %>
+                      <%#end %>
                   <div class="img-overlay">
                     <p class="img-btn">
                       <span class="date"><%= article.updated_at.strftime("%b %d, %Y") %></span>

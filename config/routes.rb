@@ -19,7 +19,13 @@ Rails.application.routes.draw do
   get "logout", to: "sessions#destroy", as: "logout"
   get "edit", to: "users#edit", as: "edit"
   get "signup", to: "users#user_new", as: "signup"
+  get 'tags/:tag', to: 'welcome#index', as: "tag"
 
+  get 'forgot_passwords', to: 'forgot_passwords#new'
+  resources :forgot_passwords, only: [:create]
+  get 'forgot_password_confirmation', to: 'forgot_passwords#confirm'
+  resources :password_resets, only: [:show, :create]
+  get 'expired_token', to: 'password_resets#expired_token'
 
   root 'welcome#index'
 

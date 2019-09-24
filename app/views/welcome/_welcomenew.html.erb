@@ -104,17 +104,40 @@
 
   <section id="section-works" class="section appear clearfix">
     <div class="container">
-      <%@articles = Article.search(params[:search]) %>
+      <%# @articles  = Article.all%>
+      <% @articles  = Article.paginate(:page => params[:page], :per_page=>6)%>
+      <%#  if params[:search] %>
+      <%#@articles = Article.search(params[:search]) %>
+
+        <%#else %>
+        <% if params[:tag] %>
+        <% @articles = Article.tagged_with(params[:tag]).paginate(:page => params[:page], :per_page=>6)%>
+        <%# @articles  = Article.paginate(:page => params[:page], :per_page=>6)%>
       <% if @articles.count == 0  %>
         <h2 class="text-danger">No Article Found</h2>
         <%=link_to 'Return to Articles',  root_url, class: 'btn btn-info' %>
       <%else %>
       <%end %>
+        <%end %>
+
+        <%  if params[:search] %>
+          <%@articles = Article.paginate(:page => params[:page], :per_page=>6).search(params[:search]) %>
+          <%# @articles  = Article.paginate(:page => params[:page], :per_page=>6)%>
+          <% if @articles.count == 0  %>
+            <h2 class="text-danger">No Article Found</h2>
+            <%=link_to 'Return to Articles',  root_url, class: 'btn btn-info' %>
+          <%else %>
+          <%end %>
+
+         <%end %>
+      <%# if params[:search] || params[:Tag] %>
+      <%#else %>
+        <%= will_paginate @articles %>
+      <%#end %>
       <div class="row">
         <div class="col-md-12">
           <div class="row">
             <div class="portfolio-items isotopeWrapper clearfix" id="3">
-
 
 
               <% @articles.each do |article| %>
@@ -122,11 +145,11 @@
                 <article class="col-md-4">
                   <div class="imgBlock">
                     <div class="img-container">
-                      <% if article.image.attached? %>
-                        <%= image_tag article.image.variant(combine_options: { resize: "720x550^", extent: "720x550^", auto_orient: true, gravity: "center"}).processed, alt: 'Image', class: 'img-responsive' %>
-                      <%else %>
+                      <%# if article.image.attached? %>
+                        <%#= image_tag article.image.variant(combine_options: { resize: "720x550^", extent: "720x550^", auto_orient: true, gravity: "center"}).processed, alt: 'Image', class: 'img-responsive' %>
+                      <%#else %>
                         <%= image_tag("portfolio/img1.jpg") %>
-                      <%end %>
+                      <%#end %>
                       <div class="img-overlay">
                         <p class="img-btn">
                           <span class="date"><%= article.updated_at.strftime("%b %d, %Y") %></span>
@@ -153,13 +176,23 @@
                   </div>
                 </article>
               <%end %>
+
             </div>
           </div>
 
         </div>
       </div>
+
     </div>
+<%end %>
+<div class="container">
+  <% if params[:search] || params[:Tag] %>
+  <%else %>
+    <%= will_paginate @articles %>
+  <%end %>
+</div>
   </section>
 
 
-<%end %>
+
+

@@ -12,9 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+// require turbolinks
 //= require bootstrap-sprockets
 //= require activestorage
 //= require jquery.validate.additional-methods
 //= require jquery.validate
-//= require_tree .
+//= //= require foundation
+require_tree .
+
+$(function(){ $(document).foundation(); });

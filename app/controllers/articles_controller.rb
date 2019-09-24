@@ -4,7 +4,10 @@ layout "create_article", only: [:new, :update, :edit, :create]
 
   def index
     # @articles = Article.search(params[:search])
-    @articles = Article.all
+
+    @articles  = Article.paginate(:page => params[:page], :per_page=>6)
+    # @articles = Article.all
+
     render layout: 'articles_index'
     # if params[:search]
     #   @articles =   Article.where("lower(:title) LIKE :title",title: "%#{:search.downcase}%")
@@ -70,6 +73,6 @@ layout "create_article", only: [:new, :update, :edit, :create]
 
   private
   def article_params
-    params.require(:article).permit(:title, :text, :search, :image)
+    params.require(:article).permit(:title, :text, :search, :image, :all_tags)
   end
 end
